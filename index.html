@@ -50,6 +50,13 @@
     .map-section { margin-top: 45px; }
     .venue-note { color: #7a6358; margin-top: 18px; font-size: 14px; }
 
+    .countdown-section { padding: 70px 20px; text-align: center; background: linear-gradient(180deg,#fff8ee,#fffdf9); }
+    .countdown { max-width: 780px; margin: 0 auto; display: grid; grid-template-columns: repeat(4,1fr); gap: 15px; }
+    .countdown-box { padding: 25px 10px; border-radius: 20px; background: #811d2d; color: #fff; box-shadow: 0 8px 25px rgba(129,29,45,.18); }
+    .countdown-box strong { display: block; font-size: 42px; color: #ffe3a3; }
+    .countdown-box span { display: block; margin-top: 6px; font-family: Arial,sans-serif; font-size: 13px; }
+    .countdown-message { margin-top: 22px; color: #705a4f; font-size: 16px; }
+
     .closing { padding: 90px 20px; text-align: center; color: #fff; background: linear-gradient(rgba(93,15,31,.96),rgba(73,10,23,.98)); }
     .heart { font-size: 38px; margin-bottom: 20px; }
     .closing h2 { max-width: 800px; margin: auto; font-size: clamp(35px,6vw,52px); }
@@ -72,6 +79,7 @@
       .button { width: 100%; max-width: 300px; min-height: 50px; }
       .language-button { top: 12px; right: 12px; padding: 9px 14px; }
       .details-section { padding: 70px 18px; }
+      .countdown { grid-template-columns: repeat(2,1fr); }
       .closing { padding: 70px 20px; }
     }
   </style>
@@ -87,9 +95,9 @@
       <div class="blessing" data-en="With Divine Blessings" data-te="దైవ ఆశీస్సులతో">With Divine Blessings</div>
       <p class="family-text" data-en="Together with our families" data-te="మా కుటుంబ సభ్యులతో కలిసి">Together with our families</p>
 
-      <h1 class="name">Raviteja Reddy</h1>
+      <h1 class="name" data-en="Raviteja Reddy" data-te="రవితేజ రెడ్డి">Raviteja Reddy</h1>
       <div class="and">&amp;</div>
-      <h1 class="name">Aswini</h1>
+      <h1 class="name" data-en="Aswini" data-te="అశ్విని">Aswini</h1>
 
       <img src="images/couples.jpg" alt="Wedding couple illustration" class="couple-image" onerror="this.style.display='none'">
 
@@ -117,7 +125,7 @@
       <div class="card">
         <div class="card-icon">📅</div>
         <h3 data-en="Date" data-te="తేదీ">Date</h3>
-        <p data-en="29 August" data-te="ఆగస్టు 29">29 September</p>
+        <p data-en="Thursday, 29 October 2026" data-te="గురువారం, 29 అక్టోబర్ 2026">Thursday, 29 October 2026</p>
       </div>
 
       <div class="card">
@@ -142,6 +150,19 @@
     </div>
   </section>
 
+  <section class="countdown-section">
+    <div class="section-subtitle" data-en="Our Special Day" data-te="మా శుభదినం">Our Special Day</div>
+    <h2 class="section-title" data-en="Countdown to the Wedding" data-te="వివాహానికి కౌంట్‌డౌన్">Countdown to the Wedding</h2>
+    <div class="divider"></div>
+    <div class="countdown">
+      <div class="countdown-box"><strong id="days">0</strong><span data-en="Days" data-te="రోజులు">Days</span></div>
+      <div class="countdown-box"><strong id="hours">0</strong><span data-en="Hours" data-te="గంటలు">Hours</span></div>
+      <div class="countdown-box"><strong id="minutes">0</strong><span data-en="Minutes" data-te="నిమిషాలు">Minutes</span></div>
+      <div class="countdown-box"><strong id="seconds">0</strong><span data-en="Seconds" data-te="సెకన్లు">Seconds</span></div>
+    </div>
+    <p id="countdownMessage" class="countdown-message"></p>
+  </section>
+
   <section class="closing">
     <div class="heart">❤️</div>
 
@@ -152,13 +173,14 @@
       We look forward to celebrating this beautiful and auspicious occasion with you.
     </p>
 
-    <p class="couple-footer">Raviteja Reddy ❤️ Aswini</p>
+    <p class="couple-footer" data-en="Raviteja Reddy ❤️ Aswini" data-te="రవితేజ రెడ్డి ❤️ అశ్విని">Raviteja Reddy ❤️ Aswini</p>
   </section>
 
-  <footer>Made with ❤️ for Raviteja Reddy &amp; Aswini</footer>
+  <footer data-en="Made with ❤️ for Raviteja Reddy &amp; Aswini" data-te="రవితేజ రెడ్డి ❤️ అశ్విని కోసం ప్రేమతో రూపొందించబడింది">Made with ❤️ for Raviteja Reddy &amp; Aswini</footer>
 
   <script>
     let currentLanguage = "en";
+    const weddingDate = new Date("2026-10-29T07:53:00+05:30").getTime();
 
     function changeLanguage() {
       currentLanguage = currentLanguage === "en" ? "te" : "en";
@@ -173,7 +195,31 @@
       const languageButton = document.getElementById("languageButton");
       languageButton.textContent = currentLanguage === "te" ? "🌐 English" : "🌐 తెలుగు";
       document.documentElement.lang = currentLanguage;
+      updateCountdown();
     }
+
+    function updateCountdown() {
+      const distance = weddingDate - Date.now();
+      const message = document.getElementById("countdownMessage");
+
+      if (distance <= 0) {
+        document.getElementById("days").textContent = "0";
+        document.getElementById("hours").textContent = "0";
+        document.getElementById("minutes").textContent = "0";
+        document.getElementById("seconds").textContent = "0";
+        message.textContent = currentLanguage === "te" ? "మా శుభదినం వచ్చేసింది! ❤️" : "Our special day has arrived! ❤️";
+        return;
+      }
+
+      document.getElementById("days").textContent = Math.floor(distance / (1000 * 60 * 60 * 24));
+      document.getElementById("hours").textContent = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      document.getElementById("minutes").textContent = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      document.getElementById("seconds").textContent = Math.floor((distance % (1000 * 60)) / 1000);
+      message.textContent = currentLanguage === "te" ? "29 అక్టోబర్ 2026 ఉదయం 7:53 గంటలకు" : "29 October 2026 at 7:53 AM IST";
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
   </script>
 </body>
 </html>
