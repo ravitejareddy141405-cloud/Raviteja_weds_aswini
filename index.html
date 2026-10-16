@@ -1,997 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Wedding Invitation of Raviteja Reddy and Aswini">
-
-    <title>Raviteja Reddy ❤️ Aswini | Wedding Invitation</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Georgia, "Times New Roman", serif;
-            color: #442b20;
-            background: #fffaf4;
-            overflow-x: hidden;
-        }
-
-        /* =========================
-           LANGUAGE BUTTON
-        ========================== */
-
-        .language-button {
-            position: fixed;
-            top: 18px;
-            right: 18px;
-            z-index: 1000;
-
-            border: 1px solid #d7a54a;
-            background: rgba(255, 255, 255, 0.95);
-            color: #8b1e2d;
-
-            padding: 10px 18px;
-            border-radius: 30px;
-
-            font-family: inherit;
-            font-size: 14px;
-            font-weight: bold;
-
-            cursor: pointer;
-
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-
-            transition: all 0.3s ease;
-        }
-
-        .language-button:hover {
-            background: #fff8e6;
-            transform: translateY(-2px);
-        }
-
-        /* =========================
-           HERO SECTION
-        ========================== */
-
-        .hero {
-            position: relative;
-
-            min-height: 100vh;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            padding: 70px 20px;
-
-            text-align: center;
-
-            overflow: hidden;
-
-            background:
-                linear-gradient(
-                    rgba(255, 250, 240, 0.92),
-                    rgba(255, 247, 237, 0.96)
-                ),
-                url("images/god.jpg");
-
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .hero::before {
-            content: "";
-
-            position: absolute;
-
-            width: 420px;
-            height: 420px;
-
-            top: -180px;
-            left: -160px;
-
-            border-radius: 50%;
-
-            background: rgba(244, 184, 96, 0.22);
-
-            filter: blur(50px);
-        }
-
-        .hero::after {
-            content: "";
-
-            position: absolute;
-
-            width: 420px;
-            height: 420px;
-
-            bottom: -180px;
-            right: -160px;
-
-            border-radius: 50%;
-
-            background: rgba(177, 63, 79, 0.18);
-
-            filter: blur(50px);
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-
-            width: 100%;
-            max-width: 850px;
-
-            animation: fadeUp 1.2s ease;
-        }
-
-        /* =========================
-           GOD IMAGE
-        ========================== */
-
-        .god-image {
-            display: block;
-
-            width: 300px;
-            max-width: 85%;
-
-            max-height: 290px;
-
-            object-fit: contain;
-
-            margin: 0 auto 20px;
-
-            border-radius: 22px;
-
-            filter:
-                drop-shadow(0 10px 20px rgba(111, 65, 20, 0.25));
-        }
-
-        .om {
-            color: #a64b15;
-
-            font-size: 34px;
-
-            margin-bottom: 8px;
-        }
-
-        .blessing {
-            color: #a14d22;
-
-            font-size: 17px;
-
-            margin-bottom: 22px;
-
-            letter-spacing: 1px;
-        }
-
-        .family-text {
-            text-transform: uppercase;
-
-            letter-spacing: 3px;
-
-            font-size: 13px;
-            font-weight: bold;
-
-            color: #95551e;
-
-            margin-bottom: 25px;
-        }
-
-        /* =========================
-           COUPLE NAMES
-        ========================== */
-
-        .name {
-            font-size: clamp(46px, 10vw, 82px);
-
-            line-height: 1.05;
-
-            color: #531722;
-
-            text-shadow:
-                0 2px 0 #ffffff,
-                0 5px 18px rgba(0, 0, 0, 0.08);
-        }
-
-        .and {
-            font-size: 42px;
-
-            font-style: italic;
-
-            color: #c28a2c;
-
-            margin: 12px 0;
-        }
-
-        /* =========================
-           COUPLE IMAGE
-        ========================== */
-
-        .couple-image {
-            display: block;
-
-            width: 330px;
-            max-width: 90%;
-
-            max-height: 350px;
-
-            object-fit: contain;
-
-            margin: 30px auto;
-
-            filter:
-                drop-shadow(0 12px 18px rgba(92, 38, 20, 0.17));
-        }
-
-        /* =========================
-           INVITATION TEXT
-        ========================== */
-
-        .invite-text {
-            max-width: 700px;
-
-            margin: 25px auto;
-
-            font-size: 19px;
-            line-height: 1.8;
-
-            color: #665044;
-        }
-
-        /* =========================
-           BUTTONS
-        ========================== */
-
-        .buttons {
-            display: flex;
-
-            justify-content: center;
-            align-items: center;
-
-            flex-wrap: wrap;
-
-            gap: 15px;
-
-            margin-top: 30px;
-        }
-
-        .button {
-            display: inline-flex;
-
-            justify-content: center;
-            align-items: center;
-
-            text-decoration: none;
-
-            padding: 14px 25px;
-
-            border-radius: 30px;
-
-            font-family: Arial, sans-serif;
-            font-size: 15px;
-            font-weight: 600;
-
-            transition: all 0.3s ease;
-        }
-
-        .primary-button {
-            background: #811d2d;
-            color: white;
-
-            box-shadow:
-                0 5px 15px rgba(129, 29, 45, 0.25);
-        }
-
-        .primary-button:hover {
-            background: #641522;
-
-            transform: translateY(-3px);
-        }
-
-        .secondary-button {
-            background: rgba(255, 255, 255, 0.96);
-
-            color: #811d2d;
-
-            border: 1px solid #e2b8a0;
-
-            box-shadow:
-                0 5px 15px rgba(0, 0, 0, 0.08);
-        }
-
-        .secondary-button:hover {
-            background: #fff3e5;
-
-            transform: translateY(-3px);
-        }
-
-        /* =========================
-           DETAILS SECTION
-        ========================== */
-
-        .details-section {
-            padding: 85px 20px;
-
-            background:
-                linear-gradient(
-                    180deg,
-                    #fffdf9,
-                    #fff8ee
-                );
-
-            text-align: center;
-        }
-
-        .section-subtitle {
-            color: #b67a22;
-
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            font-weight: bold;
-
-            letter-spacing: 3px;
-
-            text-transform: uppercase;
-        }
-
-        .section-title {
-            margin-top: 12px;
-
-            color: #541925;
-
-            font-size: clamp(38px, 6vw, 55px);
-        }
-
-        .divider {
-            width: 110px;
-            height: 2px;
-
-            margin: 20px auto 45px;
-
-            background:
-                linear-gradient(
-                    to right,
-                    transparent,
-                    #cc983d,
-                    transparent
-                );
-        }
-
-        /* =========================
-           DETAIL CARDS
-        ========================== */
-
-        .cards {
-            max-width: 1050px;
-
-            margin: auto;
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap: 22px;
-        }
-
-        .card {
-            padding: 38px 20px;
-
-            border-radius: 24px;
-
-            background: #fffdf8;
-
-            border: 1px solid #efd6aa;
-
-            box-shadow:
-                0 8px 25px rgba(71, 40, 17, 0.07);
-
-            transition: all 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-6px);
-
-            box-shadow:
-                0 14px 35px rgba(71, 40, 17, 0.13);
-        }
-
-        .card-icon {
-            font-size: 38px;
-
-            margin-bottom: 15px;
-        }
-
-        .card h3 {
-            color: #711b29;
-
-            font-size: 25px;
-
-            margin-bottom: 12px;
-        }
-
-        .card p {
-            color: #705a4f;
-
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        /* =========================
-           MAP SECTION
-        ========================== */
-
-        .map-section {
-            margin-top: 45px;
-        }
-
-        .venue-note {
-            color: #7a6358;
-
-            margin-top: 18px;
-
-            font-size: 14px;
-        }
-
-        /* =========================
-           CLOSING SECTION
-        ========================== */
-
-        .closing {
-            position: relative;
-
-            padding: 90px 20px;
-
-            text-align: center;
-
-            color: white;
-
-            background:
-                linear-gradient(
-                    rgba(93, 15, 31, 0.96),
-                    rgba(73, 10, 23, 0.98)
-                );
-        }
-
-        .heart {
-            font-size: 38px;
-
-            margin-bottom: 20px;
-        }
-
-        .closing h2 {
-            max-width: 800px;
-
-            margin: auto;
-
-            font-size:
-                clamp(35px, 6vw, 52px);
-        }
-
-        .closing p {
-            max-width: 650px;
-
-            margin: 22px auto;
-
-            color: #f7dfe3;
-
-            font-size: 18px;
-            line-height: 1.8;
-        }
-
-        .couple-footer {
-            margin-top: 35px !important;
-
-            color: #ffe3a3 !important;
-
-            font-size: 27px !important;
-        }
-
-        /* =========================
-           FOOTER
-        ========================== */
-
-        footer {
-            padding: 22px 15px;
-
-            background: #351017;
-
-            color: #e6c9cd;
-
-            text-align: center;
-
-            font-family: Arial, sans-serif;
-            font-size: 13px;
-        }
-
-        /* =========================
-           ANIMATION
-        ========================== */
-
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* =========================
-           MOBILE
-        ========================== */
-
-        @media (max-width: 768px) {
-
-            .hero {
-                min-height: auto;
-
-                padding-top: 90px;
-                padding-bottom: 70px;
-
-                background-position: center top;
-            }
-
-            .god-image {
-                width: 230px;
-
-                max-height: 230px;
-            }
-
-            .name {
-                font-size: clamp(44px, 14vw, 65px);
-            }
-
-            .and {
-                font-size: 34px;
-            }
-
-            .couple-image {
-                width: 280px;
-            }
-
-            .invite-text {
-                font-size: 17px;
-
-                line-height: 1.7;
-            }
-
-            .cards {
-                grid-template-columns: 1fr;
-            }
-
-            .card {
-                width: 100%;
-
-                max-width: 500px;
-
-                margin: auto;
-            }
-
-            .buttons {
-                flex-direction: column;
-            }
-
-            .button {
-                width: 100%;
-
-                max-width: 300px;
-
-                min-height: 50px;
-            }
-
-            .language-button {
-                top: 12px;
-                right: 12px;
-
-                padding: 9px 14px;
-            }
-
-            .details-section {
-                padding:
-                    70px 18px;
-            }
-
-            .closing {
-                padding:
-                    70px 20px;
-            }
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wedding Invitation of Raviteja Reddy and Aswini">
+  <title>Raviteja Reddy ❤️ Aswini | Wedding Invitation</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Georgia, "Times New Roman", serif; color: #442b20; background: #fffaf4; overflow-x: hidden; }
+
+    .language-button { position: fixed; top: 18px; right: 18px; z-index: 1000; border: 1px solid #d7a54a; background: rgba(255,255,255,.95); color: #8b1e2d; padding: 10px 18px; border-radius: 30px; font-family: inherit; font-size: 14px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,.12); transition: .3s; }
+    .language-button:hover { background: #fff8e6; transform: translateY(-2px); }
+
+    .hero { position: relative; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 70px 20px; text-align: center; overflow: hidden; background: linear-gradient(rgba(255,250,240,.92), rgba(255,247,237,.96)), url("images/god.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+    .hero::before, .hero::after { content: ""; position: absolute; width: 420px; height: 420px; border-radius: 50%; filter: blur(50px); }
+    .hero::before { top: -180px; left: -160px; background: rgba(244,184,96,.22); }
+    .hero::after { bottom: -180px; right: -160px; background: rgba(177,63,79,.18); }
+    .hero-content { position: relative; z-index: 2; width: 100%; max-width: 850px; animation: fadeUp 1.2s ease; }
+
+    .god-image { display: block; width: 300px; max-width: 85%; max-height: 290px; object-fit: contain; margin: 0 auto 20px; border-radius: 22px; filter: drop-shadow(0 10px 20px rgba(111,65,20,.25)); }
+    .om { color: #a64b15; font-size: 34px; margin-bottom: 8px; }
+    .blessing { color: #a14d22; font-size: 17px; margin-bottom: 22px; letter-spacing: 1px; }
+    .family-text { text-transform: uppercase; letter-spacing: 3px; font-size: 13px; font-weight: bold; color: #95551e; margin-bottom: 25px; }
+
+    .name { font-size: clamp(46px,10vw,82px); line-height: 1.05; color: #531722; text-shadow: 0 2px 0 #fff, 0 5px 18px rgba(0,0,0,.08); }
+    .and { font-size: 42px; font-style: italic; color: #c28a2c; margin: 12px 0; }
+    .couple-image { display: block; width: 330px; max-width: 90%; max-height: 350px; object-fit: contain; margin: 30px auto; filter: drop-shadow(0 12px 18px rgba(92,38,20,.17)); }
+    .invite-text { max-width: 700px; margin: 25px auto; font-size: 19px; line-height: 1.8; color: #665044; }
+
+    .buttons { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px; margin-top: 30px; }
+    .button { display: inline-flex; justify-content: center; align-items: center; text-decoration: none; padding: 14px 25px; border-radius: 30px; font-family: Arial,sans-serif; font-size: 15px; font-weight: 600; transition: .3s; }
+    .primary-button { background: #811d2d; color: #fff; box-shadow: 0 5px 15px rgba(129,29,45,.25); }
+    .primary-button:hover { background: #641522; transform: translateY(-3px); }
+    .secondary-button { background: rgba(255,255,255,.96); color: #811d2d; border: 1px solid #e2b8a0; box-shadow: 0 5px 15px rgba(0,0,0,.08); }
+    .secondary-button:hover { background: #fff3e5; transform: translateY(-3px); }
+
+    .details-section { padding: 85px 20px; background: linear-gradient(180deg,#fffdf9,#fff8ee); text-align: center; }
+    .section-subtitle { color: #b67a22; font-family: Arial,sans-serif; font-size: 14px; font-weight: bold; letter-spacing: 3px; text-transform: uppercase; }
+    .section-title { margin-top: 12px; color: #541925; font-size: clamp(38px,6vw,55px); }
+    .divider { width: 110px; height: 2px; margin: 20px auto 45px; background: linear-gradient(to right,transparent,#cc983d,transparent); }
+    .cards { max-width: 1050px; margin: auto; display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+    .card { padding: 38px 20px; border-radius: 24px; background: #fffdf8; border: 1px solid #efd6aa; box-shadow: 0 8px 25px rgba(71,40,17,.07); transition: .3s; }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 14px 35px rgba(71,40,17,.13); }
+    .card-icon { font-size: 38px; margin-bottom: 15px; }
+    .card h3 { color: #711b29; font-size: 25px; margin-bottom: 12px; }
+    .card p { color: #705a4f; font-size: 18px; line-height: 1.6; }
+    .map-section { margin-top: 45px; }
+    .venue-note { color: #7a6358; margin-top: 18px; font-size: 14px; }
+
+    .closing { padding: 90px 20px; text-align: center; color: #fff; background: linear-gradient(rgba(93,15,31,.96),rgba(73,10,23,.98)); }
+    .heart { font-size: 38px; margin-bottom: 20px; }
+    .closing h2 { max-width: 800px; margin: auto; font-size: clamp(35px,6vw,52px); }
+    .closing p { max-width: 650px; margin: 22px auto; color: #f7dfe3; font-size: 18px; line-height: 1.8; }
+    .couple-footer { margin-top: 35px !important; color: #ffe3a3 !important; font-size: 27px !important; }
+    footer { padding: 22px 15px; background: #351017; color: #e6c9cd; text-align: center; font-family: Arial,sans-serif; font-size: 13px; }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+    @media (max-width: 768px) {
+      .hero { min-height: auto; padding-top: 90px; padding-bottom: 70px; background-position: center top; }
+      .god-image { width: 230px; max-height: 230px; }
+      .name { font-size: clamp(44px,14vw,65px); }
+      .and { font-size: 34px; }
+      .couple-image { width: 280px; }
+      .invite-text { font-size: 17px; line-height: 1.7; }
+      .cards { grid-template-columns: 1fr; }
+      .card { width: 100%; max-width: 500px; margin: auto; }
+      .buttons { flex-direction: column; }
+      .button { width: 100%; max-width: 300px; min-height: 50px; }
+      .language-button { top: 12px; right: 12px; padding: 9px 14px; }
+      .details-section { padding: 70px 18px; }
+      .closing { padding: 70px 20px; }
+    }
+  </style>
 </head>
-
 <body>
-
-    <!-- ==============================
-         LANGUAGE SELECTOR
-    =============================== -->
-
-    <button
-        type="button"
-        id="languageButton"
-        class="language-button"
-        onclick="changeLanguage()">
-
-        🌐 తెలుగు
-
-    </button>
-
-
-    <!-- ==============================
-         HERO / INVITATION
-    =============================== -->
-
-    <section class="hero">
-
-        <div class="hero-content">
-
-
-            <!--
-                DIVINE IMAGE
-
-                GitHub location:
-                images/god.jpg
-            -->
-
-            <img
-                src="images/god.jpg"
-                alt="Divine wedding blessings"
-                class="god-image"
-                onerror="this.style.display='none';"
-            >
-
-
-            <div class="om">
-                ॐ
-            </div>
-
-
-            <div
-                class="blessing"
-                data-en="With Divine Blessings"
-                data-te="దైవ ఆశీస్సులతో">
-
-                With Divine Blessings
-
-            </div>
-
-
-            <p
-                class="family-text"
-                data-en="Together with our families"
-                data-te="మా కుటుంబ సభ్యులతో కలిసి">
-
-                Together with our families
-
-            </p>
-
-
-            <!-- GROOM NAME -->
-
-            <h1 class="name">
-                Raviteja Reddy
-            </h1>
-
-
-            <div class="and">
-                &
-            </div>
-
-
-            <!-- BRIDE NAME -->
-
-            <h1 class="name">
-                Aswini
-            </h1>
-
-
-            <!--
-                COUPLE ILLUSTRATION
-
-                GitHub location:
-                images/couple.png
-            -->
-
-            <img
-                src="images/couple.png"
-                alt="Wedding couple illustration"
-                class="couple-image"
-                onerror="this.style.display='none';"
-            >
-
-
-            <!-- INVITATION MESSAGE -->
-
-            <p
-                class="invite-text"
-                data-en="We joyfully invite you to celebrate our wedding and bless us as we begin our beautiful new journey together."
-                data-te="మా వివాహ మహోత్సవానికి విచ్చేసి, నూతన జీవితాన్ని ప్రారంభిస్తున్న మమ్మల్ని ఆశీర్వదించవలసిందిగా సాదరంగా ఆహ్వానిస్తున్నాము.">
-
-                We joyfully invite you to celebrate our wedding
-                and bless us as we begin our beautiful new journey together.
-
-            </p>
-
-
-            <!-- BUTTONS -->
-
-            <div class="buttons">
-
-                <a
-                    href="#details"
-                    class="button primary-button"
-                    data-en="💍 Wedding Details"
-                    data-te="💍 వివాహ వివరాలు">
-
-                    💍 Wedding Details
-
-                </a>
-
-
-                <a
-                    href="https://www.google.com/maps/search/?api=1&amp;query=Nikarampalli+Village+Markapur"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="button secondary-button"
-                    data-en="📍 Get Directions"
-                    data-te="📍 దారి చూపించండి">
-
-                    📍 Get Directions
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ==============================
-         WEDDING DETAILS
-    =============================== -->
-
-    <section
-        id="details"
-        class="details-section">
-
-
-        <div
-            class="section-subtitle"
-            data-en="Save The Date"
-            data-te="తేదీ గుర్తుంచుకోండి">
-
-            Save The Date
-
-        </div>
-
-
-        <h2
-            class="section-title"
-            data-en="Wedding Details"
-            data-te="వివాహ వివరాలు">
-
-            Wedding Details
-
-        </h2>
-
-
-        <div class="divider"></div>
-
-
-        <div class="cards">
-
-
-            <!-- DATE -->
-
-            <div class="card">
-
-                <div class="card-icon">
-                    📅
-                </div>
-
-                <h3
-                    data-en="Date"
-                    data-te="తేదీ">
-
-                    Date
-
-                </h3>
-
-                <p
-                    data-en="29 August"
-                    data-te="ఆగస్టు 29">
-
-                    29 August
-
-                </p>
-
-            </div>
-
-
-            <!-- MUHURTHAM -->
-
-            <div class="card">
-
-                <div class="card-icon">
-                    🕉️
-                </div>
-
-                <h3
-                    data-en="Muhurtham"
-                    data-te="ముహూర్తం">
-
-                    Muhurtham
-
-                </h3>
-
-                <p
-                    data-en="7:53 AM"
-                    data-te="ఉదయం 7:53 గంటలకు">
-
-                    7:53 AM
-
-                </p>
-
-            </div>
-
-
-            <!-- VENUE -->
-
-            <div class="card">
-
-                <div class="card-icon">
-                    📍
-                </div>
-
-                <h3
-                    data-en="Venue"
-                    data-te="వేదిక">
-
-                    Venue
-
-                </h3>
-
-                <p
-                    data-en="Nikarampalli Village, Markapur"
-                    data-te="నికరంపల్లి గ్రామం, మార్కాపూర్">
-
-                    Nikarampalli Village, Markapur
-
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- GOOGLE MAPS -->
-
-        <div class="map-section">
-
-            <a
-                href="https://www.google.com/maps/search/?api=1&amp;query=Nikarampalli+Village+Markapur"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="button primary-button"
-                data-en="📍 Open Venue in Google Maps"
-                data-te="📍 గూగుల్ మ్యాప్స్‌లో వేదికను తెరవండి">
-
-                📍 Open Venue in Google Maps
-
-            </a>
-
-            <p
-                class="venue-note"
-                data-en="Nikarampalli Village, Markapur"
-                data-te="నికరంపల్లి గ్రామం, మార్కాపూర్">
-
-                Nikarampalli Village, Markapur
-
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- ==============================
-         CLOSING
-    =============================== -->
-
-    <section class="closing">
-
-        <div class="heart">
-            ❤️
-        </div>
-
-
-        <h2
-            data-en="Your presence is our greatest blessing"
-            data-te="మీ రాకే మాకు గొప్ప ఆశీర్వాదం">
-
-            Your presence is our greatest blessing
-
-        </h2>
-
-
-        <p
-            data-en="We look forward to celebrating this beautiful and auspicious occasion with you."
-            data-te="ఈ         document.querySelectorAll("[data-en]");
-
-
-            elements.forEach(function(element) {
-
-                if (currentLanguage === "te") {
-
-                    const teluguText =
-                        element.getAttribute("data-te");
-
-                    if (teluguText) {
-                        element.textContent = teluguText;
-                    }
-
-                } else {
-
-                    const englishText =
-                        element.getAttribute("data-en");
-
-                    if (englishText) {
-                        element.textContent = englishText;
-                    }
-
-                }
-
-            });
-
-
-            /*
-             * Change language button text
-             */
-
-            const languageButton =
-                document.getElementById("languageButton");
-
-
-            if (currentLanguage === "te") {
-
-                languageButton.textContent =
-                    "🌐 English";
-
-                document.documentElement.lang =
-                    "te";
-
-            } else {
-
-                languageButton.textContent =
-                    "🌐 తెలుగు";
-
-                document.documentElement.lang =
-                    "en";
-
-            }
-
+  <button type="button" id="languageButton" class="language-button" onclick="changeLanguage()">🌐 తెలుగు</button>
+
+  <section class="hero">
+    <div class="hero-content">
+      <img src="images/god.jpg" alt="Divine wedding blessings" class="god-image" onerror="this.style.display='none'">
+
+      <div class="om">ॐ</div>
+      <div class="blessing" data-en="With Divine Blessings" data-te="దైవ ఆశీస్సులతో">With Divine Blessings</div>
+      <p class="family-text" data-en="Together with our families" data-te="మా కుటుంబ సభ్యులతో కలిసి">Together with our families</p>
+
+      <h1 class="name">Raviteja Reddy</h1>
+      <div class="and">&amp;</div>
+      <h1 class="name">Aswini</h1>
+
+      <img src="images/couple.png" alt="Wedding couple illustration" class="couple-image" onerror="this.style.display='none'">
+
+      <p class="invite-text"
+         data-en="We joyfully invite you to celebrate our wedding and bless us as we begin our beautiful new journey together."
+         data-te="మా వివాహ మహోత్సవానికి విచ్చేసి, నూతన జీవితాన్ని ప్రారంభిస్తున్న మమ్మల్ని ఆశీర్వదించవలసిందిగా సాదరంగా ఆహ్వానిస్తున్నాము.">
+        We joyfully invite you to celebrate our wedding and bless us as we begin our beautiful new journey together.
+      </p>
+
+      <div class="buttons">
+        <a href="#details" class="button primary-button" data-en="💍 Wedding Details" data-te="💍 వివాహ వివరాలు">💍 Wedding Details</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Nikarampalli%20Village%20Markapur"
+           target="_blank" rel="noopener noreferrer" class="button secondary-button"
+           data-en="📍 Get Directions" data-te="📍 దారి చూపించండి">📍 Get Directions</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="details" class="details-section">
+    <div class="section-subtitle" data-en="Save The Date" data-te="తేదీ గుర్తుంచుకోండి">Save The Date</div>
+    <h2 class="section-title" data-en="Wedding Details" data-te="వివాహ వివరాలు">Wedding Details</h2>
+    <div class="divider"></div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">📅</div>
+        <h3 data-en="Date" data-te="తేదీ">Date</h3>
+        <p data-en="29 August" data-te="ఆగస్టు 29">29 August</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🕉️</div>
+        <h3 data-en="Muhurtham" data-te="ముహూర్తం">Muhurtham</h3>
+        <p data-en="7:53 AM" data-te="ఉదయం 7:53 గంటలకు">7:53 AM</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📍</div>
+        <h3 data-en="Venue" data-te="వేదిక">Venue</h3>
+        <p data-en="Nikarampalli Village, Markapur" data-te="నికరంపల్లి గ్రామం, మార్కాపూర్">Nikarampalli Village, Markapur</p>
+      </div>
+    </div>
+
+    <div class="map-section">
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Nikarampalli%20Village%20Markapur"
+         target="_blank" rel="noopener noreferrer" class="button primary-button"
+         data-en="📍 Open Venue in Google Maps" data-te="📍 గూగుల్ మ్యాప్స్‌లో వేదికను తెరవండి">📍 Open Venue in Google Maps</a>
+
+      <p class="venue-note" data-en="Nikarampalli Village, Markapur" data-te="నికరంపల్లి గ్రామం, మార్కాపూర్">Nikarampalli Village, Markapur</p>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="heart">❤️</div>
+
+    <h2 data-en="Your presence is our greatest blessing" data-te="మీ రాకే మాకు గొప్ప ఆశీర్వాదం">Your presence is our greatest blessing</h2>
+
+    <p data-en="We look forward to celebrating this beautiful and auspicious occasion with you."
+       data-te="ఈ శుభ సందర్భాన్ని మీతో కలిసి ఆనందంగా జరుపుకోవాలని ఎదురుచూస్తున్నాము.">
+      We look forward to celebrating this beautiful and auspicious occasion with you.
+    </p>
+
+    <p class="couple-footer">Raviteja Reddy ❤️ Aswini</p>
+  </section>
+
+  <footer>Made with ❤️ for Raviteja Reddy &amp; Aswini</footer>
+
+  <script>
+    let currentLanguage = "en";
+
+    function changeLanguage() {
+      currentLanguage = currentLanguage === "en" ? "te" : "en";
+
+      document.querySelectorAll("[data-en][data-te]").forEach(function (element) {
+        const translatedText = element.getAttribute("data-" + currentLanguage);
+        if (translatedText !== null) {
+          element.textContent = translatedText;
         }
+      });
 
-    </script>
-
+      const languageButton = document.getElementById("languageButton");
+      languageButton.textContent = currentLanguage === "te" ? "🌐 English" : "🌐 తెలుగు";
+      document.documentElement.lang = currentLanguage;
+    }
+  </script>
 </body>
 </html>
