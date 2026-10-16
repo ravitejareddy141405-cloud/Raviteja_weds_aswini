@@ -3,223 +3,2479 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Wedding Invitation of Raviteja Reddy and Aswini">
+
+  <meta
+    name="description"
+    content="Wedding Invitation of Raviteja Reddy and Aswini"
+  >
+
   <title>Raviteja Reddy ❤️ Aswini | Wedding Invitation</title>
 
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { font-family: Georgia, "Times New Roman", serif; color: #442b20; background: #fffaf4; overflow-x: hidden; }
 
-    .language-button { position: fixed; top: 18px; right: 18px; z-index: 1000; border: 1px solid #d7a54a; background: rgba(255,255,255,.95); color: #8b1e2d; padding: 10px 18px; border-radius: 30px; font-family: inherit; font-size: 14px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,.12); transition: .3s; }
-    .language-button:hover { background: #fff8e6; transform: translateY(-2px); }
+    /* ==================================================
+       GLOBAL
+    ================================================== */
 
-    .hero { position: relative; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 70px 20px; text-align: center; overflow: hidden; background: linear-gradient(rgba(255,250,240,.92), rgba(255,247,237,.96)), url("images/god.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; }
-    .hero::before, .hero::after { content: ""; position: absolute; width: 420px; height: 420px; border-radius: 50%; filter: blur(50px); }
-    .hero::before { top: -180px; left: -160px; background: rgba(244,184,96,.22); }
-    .hero::after { bottom: -180px; right: -160px; background: rgba(177,63,79,.18); }
-    .hero-content { position: relative; z-index: 2; width: 100%; max-width: 850px; animation: fadeUp 1.2s ease; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    .god-image { display: block; width: 300px; max-width: 85%; max-height: 290px; object-fit: contain; margin: 0 auto 20px; border-radius: 22px; filter: drop-shadow(0 10px 20px rgba(111,65,20,.25)); }
-    .om { color: #a64b15; font-size: 34px; margin-bottom: 8px; }
-    .blessing { color: #a14d22; font-size: 17px; margin-bottom: 22px; letter-spacing: 1px; }
-    .family-text { text-transform: uppercase; letter-spacing: 3px; font-size: 13px; font-weight: bold; color: #95551e; margin-bottom: 25px; }
+    html {
+      scroll-behavior: smooth;
+    }
 
-    .name { font-size: clamp(46px,10vw,82px); line-height: 1.05; color: #531722; text-shadow: 0 2px 0 #fff, 0 5px 18px rgba(0,0,0,.08); }
-    .and { font-size: 42px; font-style: italic; color: #c28a2c; margin: 12px 0; }
-    .couple-image { display: block; width: 330px; max-width: 90%; max-height: 350px; object-fit: contain; margin: 30px auto; filter: drop-shadow(0 12px 18px rgba(92,38,20,.17)); }
-    .invite-text { max-width: 700px; margin: 25px auto; font-size: 19px; line-height: 1.8; color: #665044; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
 
-    .buttons { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px; margin-top: 30px; }
-    .button { display: inline-flex; justify-content: center; align-items: center; text-decoration: none; padding: 14px 25px; border-radius: 30px; font-family: Arial,sans-serif; font-size: 15px; font-weight: 600; transition: .3s; }
-    .primary-button { background: #811d2d; color: #fff; box-shadow: 0 5px 15px rgba(129,29,45,.25); }
-    .primary-button:hover { background: #641522; transform: translateY(-3px); }
-    .secondary-button { background: rgba(255,255,255,.96); color: #811d2d; border: 1px solid #e2b8a0; box-shadow: 0 5px 15px rgba(0,0,0,.08); }
-    .secondary-button:hover { background: #fff3e5; transform: translateY(-3px); }
+      color: #442b20;
+      background: #fffaf4;
 
-    .details-section { padding: 85px 20px; background: linear-gradient(180deg,#fffdf9,#fff8ee); text-align: center; }
-    .section-subtitle { color: #b67a22; font-family: Arial,sans-serif; font-size: 14px; font-weight: bold; letter-spacing: 3px; text-transform: uppercase; }
-    .section-title { margin-top: 12px; color: #541925; font-size: clamp(38px,6vw,55px); }
-    .divider { width: 110px; height: 2px; margin: 20px auto 45px; background: linear-gradient(to right,transparent,#cc983d,transparent); }
-    .cards { max-width: 1050px; margin: auto; display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
-    .card { padding: 38px 20px; border-radius: 24px; background: #fffdf8; border: 1px solid #efd6aa; box-shadow: 0 8px 25px rgba(71,40,17,.07); transition: .3s; }
-    .card:hover { transform: translateY(-6px); box-shadow: 0 14px 35px rgba(71,40,17,.13); }
-    .card-icon { font-size: 38px; margin-bottom: 15px; }
-    .card h3 { color: #711b29; font-size: 25px; margin-bottom: 12px; }
-    .card p { color: #705a4f; font-size: 18px; line-height: 1.6; }
-    .map-section { margin-top: 45px; }
-    .venue-note { color: #7a6358; margin-top: 18px; font-size: 14px; }
+      overflow-x: hidden;
+    }
 
-    .countdown-section { padding: 70px 20px; text-align: center; background: linear-gradient(180deg,#fff8ee,#fffdf9); }
-    .countdown { max-width: 780px; margin: 0 auto; display: grid; grid-template-columns: repeat(4,1fr); gap: 15px; }
-    .countdown-box { padding: 25px 10px; border-radius: 20px; background: #811d2d; color: #fff; box-shadow: 0 8px 25px rgba(129,29,45,.18); }
-    .countdown-box strong { display: block; font-size: 42px; color: #ffe3a3; }
-    .countdown-box span { display: block; margin-top: 6px; font-family: Arial,sans-serif; font-size: 13px; }
-    .countdown-message { margin-top: 22px; color: #705a4f; font-size: 16px; }
 
-    .closing { padding: 90px 20px; text-align: center; color: #fff; background: linear-gradient(rgba(93,15,31,.96),rgba(73,10,23,.98)); }
-    .heart { font-size: 38px; margin-bottom: 20px; }
-    .closing h2 { max-width: 800px; margin: auto; font-size: clamp(35px,6vw,52px); }
-    .closing p { max-width: 650px; margin: 22px auto; color: #f7dfe3; font-size: 18px; line-height: 1.8; }
-    .couple-footer { margin-top: 35px !important; color: #ffe3a3 !important; font-size: 27px !important; }
-    footer { padding: 22px 15px; background: #351017; color: #e6c9cd; text-align: center; font-family: Arial,sans-serif; font-size: 13px; }
+    /* ==================================================
+       LANGUAGE BUTTON
+    ================================================== */
 
-    @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .language-button {
+      position: fixed;
+
+      top: 18px;
+      right: 18px;
+
+      z-index: 1000;
+
+      border: 1px solid #d7a54a;
+
+      background: rgba(255, 255, 255, 0.96);
+
+      color: #811d2d;
+
+      padding: 10px 18px;
+
+      border-radius: 30px;
+
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: bold;
+
+      cursor: pointer;
+
+      box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.13);
+
+      transition: all 0.3s ease;
+    }
+
+    .language-button:hover {
+      background: #fff8e6;
+
+      transform: translateY(-2px);
+    }
+
+
+    /* ==================================================
+       HERO
+    ================================================== */
+
+    .hero {
+      position: relative;
+
+      min-height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 80px 20px;
+
+      text-align: center;
+
+      overflow: hidden;
+
+      background:
+
+        linear-gradient(
+          rgba(255, 250, 240, 0.93),
+          rgba(255, 247, 237, 0.97)
+        ),
+
+        url("images/god.jpg");
+
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 440px;
+      height: 440px;
+
+      top: -190px;
+      left: -170px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(238, 183, 82, 0.23);
+
+      filter: blur(55px);
+    }
+
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      width: 440px;
+      height: 440px;
+
+      bottom: -190px;
+      right: -170px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(147, 33, 51, 0.17);
+
+      filter: blur(55px);
+    }
+
+
+    .hero-content {
+      position: relative;
+
+      z-index: 2;
+
+      width: 100%;
+      max-width: 850px;
+
+      animation: fadeUp 1.2s ease;
+    }
+
+
+    /* ==================================================
+       DIVINE IMAGE
+    ================================================== */
+
+    .god-image {
+      display: block;
+
+      width: 300px;
+
+      max-width: 85%;
+      max-height: 290px;
+
+      object-fit: contain;
+
+      margin: 0 auto 22px;
+
+      border-radius: 24px;
+
+      filter:
+        drop-shadow(
+          0 12px 22px rgba(111, 65, 20, 0.25)
+        );
+    }
+
+
+    .om {
+      color: #a64b15;
+
+      font-size: 36px;
+
+      margin-bottom: 8px;
+    }
+
+
+    .blessing {
+      color: #a14d22;
+
+      font-size: 17px;
+
+      letter-spacing: 1px;
+
+      margin-bottom: 20px;
+    }
+
+
+    .family-text {
+      color: #95551e;
+
+      font-family: Arial, sans-serif;
+
+      text-transform: uppercase;
+
+      letter-spacing: 3px;
+
+      font-size: 13px;
+      font-weight: bold;
+
+      margin-bottom: 25px;
+    }
+
+
+    /* ==================================================
+       COUPLE NAMES
+    ================================================== */
+
+    .name {
+      color: #531722;
+
+      font-size:
+        clamp(46px, 10vw, 82px);
+
+      line-height: 1.05;
+
+      text-shadow:
+        0 2px 0 #ffffff,
+        0 5px 18px rgba(0, 0, 0, 0.08);
+    }
+
+
+    .and-decoration {
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      gap: 15px;
+
+      margin: 15px auto;
+
+      color: #c28a2c;
+
+      font-size: 38px;
+      font-style: italic;
+    }
+
+
+    .and-decoration::before,
+    .and-decoration::after {
+      content: "";
+
+      width: 70px;
+      height: 1px;
+
+      background:
+        linear-gradient(
+          to right,
+          transparent,
+          #c28a2c,
+          transparent
+        );
+    }
+
+
+    /* ==================================================
+       COUPLE ILLUSTRATION
+    ================================================== */
+
+    .couple-image {
+      display: block;
+
+      width: 330px;
+
+      max-width: 90%;
+      max-height: 350px;
+
+      object-fit: contain;
+
+      margin: 30px auto;
+
+      filter:
+        drop-shadow(
+          0 12px 18px rgba(92, 38, 20, 0.17)
+        );
+    }
+
+
+    /* ==================================================
+       INVITATION TEXT
+    ================================================== */
+
+    .invite-text {
+      max-width: 700px;
+
+      margin: 25px auto;
+
+      color: #665044;
+
+      font-size: 19px;
+      line-height: 1.8;
+    }
+
+
+    /* ==================================================
+       BUTTONS
+    ================================================== */
+
+    .buttons {
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
+      flex-wrap: wrap;
+
+      gap: 15px;
+
+      margin-top: 30px;
+    }
+
+
+    .button {
+      display: inline-flex;
+
+      justify-content: center;
+      align-items: center;
+
+      padding: 14px 25px;
+
+      border-radius: 30px;
+
+      text-decoration: none;
+
+      font-family: Arial, sans-serif;
+
+      font-size: 15px;
+      font-weight: 600;
+
+      transition: all 0.3s ease;
+    }
+
+
+    .primary-button {
+      color: white;
+
+      background: #811d2d;
+
+      border: 1px solid #811d2d;
+
+      box-shadow:
+        0 6px 17px
+        rgba(129, 29, 45, 0.22);
+    }
+
+
+    .primary-button:hover {
+      background: #641522;
+
+      transform: translateY(-3px);
+    }
+
+
+    .secondary-button {
+      color: #811d2d;
+
+      background:
+        rgba(255, 255, 255, 0.96);
+
+      border:
+        1px solid #d9b16b;
+
+      box-shadow:
+        0 5px 15px
+        rgba(0, 0, 0, 0.08);
+    }
+
+
+    .secondary-button:hover {
+      background: #fff3e5;
+
+      transform: translateY(-3px);
+    }
+
+
+    /* ==================================================
+       WEDDING DETAILS
+    ================================================== */
+
+    .details-section {
+      padding: 90px 20px;
+
+      text-align: center;
+
+      background:
+        linear-gradient(
+          180deg,
+          #fffdf9,
+          #fff8ee
+        );
+    }
+
+
+    .section-subtitle {
+      color: #b67a22;
+
+      font-family: Arial, sans-serif;
+
+      font-size: 14px;
+      font-weight: bold;
+
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
+    }
+
+
+    .section-title {
+      margin-top: 12px;
+
+      color: #541925;
+
+      font-size:
+        clamp(38px, 6vw, 55px);
+    }
+
+
+    .divider {
+      width: 120px;
+      height: 2px;
+
+      margin: 20px auto 40px;
+
+      background:
+        linear-gradient(
+          to right,
+          transparent,
+          #cc983d,
+          transparent
+        );
+    }
+
+
+    /* ==================================================
+       SCRATCH CARD
+    ================================================== */
+
+    .scratch-container {
+      max-width: 720px;
+
+      margin:
+        0 auto 60px;
+    }
+
+
+    .scratch-description {
+      color: #8f6226;
+
+      margin-bottom: 15px;
+
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+
+    .scratch-card {
+      position: relative;
+
+      width: 100%;
+
+      min-height: 320px;
+
+      overflow: hidden;
+
+      border: 3px solid #c69332;
+
+      border-radius: 28px;
+
+      outline:
+        1px solid rgba(198, 147, 50, 0.35);
+
+      outline-offset: 6px;
+
+      box-shadow:
+        0 15px 40px
+        rgba(99, 54, 16, 0.16);
+    }
+
+
+    /* ==================================================
+       CONTENT UNDER SCRATCH LAYER
+    ================================================== */
+
+    .scratch-reveal {
+      position: relative;
+
+      min-height: 320px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 30px 20px;
+
+      background:
+        radial-gradient(
+          circle at center,
+          #fffef8 0%,
+          #fff7df 60%,
+          #f5e1ac 100%
+        );
+
+      box-shadow:
+        inset 0 0 0 5px #fff8df,
+        inset 0 0 0 7px
+        rgba(177, 124, 32, 0.28);
+    }
+
+
+    .reveal-heading {
+      color: #a07428;
+
+      font-family: Arial, sans-serif;
+
+      font-size: 13px;
+      font-weight: bold;
+
+      letter-spacing: 4px;
+
+      margin-bottom: 18px;
+    }
+
+
+    .reveal-day {
+      color: #811d2d;
+
+      font-family: Arial, sans-serif;
+
+      font-size: 16px;
+      font-weight: bold;
+
+      letter-spacing: 5px;
+
+      margin-bottom: 8px;
+    }
+
+
+    .reveal-number {
+      color: #641522;
+
+      font-size:
+        clamp(60px, 12vw, 90px);
+
+      font-weight: bold;
+
+      line-height: 0.95;
+
+      text-shadow:
+        0 3px 0 #ffffff,
+        0 6px 18px rgba(99, 21, 34, 0.12);
+    }
+
+
+    .reveal-month {
+      color: #741c2b;
+
+      margin-top: 9px;
+
+      font-size: 25px;
+      font-weight: bold;
+
+      letter-spacing: 5px;
+    }
+
+
+    .date-decoration {
+      color: #c69332;
+
+      font-size: 28px;
+
+      margin: 10px 0 7px;
+    }
+
+
+    .muhurtham-label {
+      color: #9b6a1c;
+
+      font-family: Arial, sans-serif;
+
+      font-size: 12px;
+      font-weight: bold;
+
+      letter-spacing: 3px;
+    }
+
+
+    .muhurtham-time {
+      display: inline-block;
+
+      margin-top: 10px;
+
+      padding: 10px 27px;
+
+      color: white;
+
+      background: #811d2d;
+
+      border:
+        2px solid #d5ac54;
+
+      border-radius: 40px;
+
+      font-size: 28px;
+      font-weight: bold;
+
+      box-shadow:
+        0 7px 16px
+        rgba(129, 29, 45, 0.18);
+    }
+
+
+    .scratch-venue {
+      color: #705a4f;
+
+      margin-top: 17px;
+
+      font-size: 16px;
+    }
+
+
+    /* ==================================================
+       SCRATCH CANVAS
+    ================================================== */
+
+    #scratchCanvas {
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      cursor: grab;
+
+      touch-action: none;
+
+      transition:
+        opacity 0.7s ease;
+    }
+
+
+    #scratchCanvas:active {
+      cursor: grabbing;
+    }
+
+
+    .scratch-card.revealed
+    #scratchCanvas {
+      opacity: 0;
+
+      pointer-events: none;
+    }
+
+
+    /* ==================================================
+       DETAIL CARDS
+    ================================================== */
+
+    .cards {
+      max-width: 1050px;
+
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 22px;
+    }
+
+
+    .card {
+      position: relative;
+
+      padding: 38px 20px;
+
+      border-radius: 24px;
+
+      background: #fffdf8;
+
+      border:
+        1px solid #efd6aa;
+
+      box-shadow:
+        0 8px 25px
+        rgba(71, 40, 17, 0.07);
+
+      transition:
+        all 0.3s ease;
+    }
+
+
+    .card:hover {
+      transform:
+        translateY(-6px);
+
+      border-color: #d8b160;
+
+      box-shadow:
+        0 14px 35px
+        rgba(71, 40, 17, 0.13);
+    }
+
+
+    .card-icon {
+      font-size: 38px;
+
+      margin-bottom: 15px;
+    }
+
+
+    .card h3 {
+      color: #711b29;
+
+      font-size: 25px;
+
+      margin-bottom: 12px;
+    }
+
+
+    .card p {
+      color: #705a4f;
+
+      font-size: 18px;
+
+      line-height: 1.6;
+    }
+
+
+    /* Highlight Muhurtham */
+
+    .muhurtham-card {
+      border:
+        2px solid #d5ac54;
+
+      background:
+        linear-gradient(
+          145deg,
+          #fffdf8,
+          #fff4d6
+        );
+    }
+
+
+    .time-highlight {
+      display: inline-block;
+
+      margin-top: 5px;
+
+      padding: 8px 20px;
+
+      border-radius: 30px;
+
+      color: white !important;
+
+      background: #811d2d;
+    }
+
+
+    /* ==================================================
+       MAP
+    ================================================== */
+
+    .map-section {
+      margin-top: 45px;
+    }
+
+
+    .venue-note {
+      color: #7a6358;
+
+      margin-top: 18px;
+
+      font-size: 14px;
+    }
+
+
+    /* ==================================================
+       COUNTDOWN
+    ================================================== */
+
+    .countdown-section {
+      padding: 80px 20px;
+
+      text-align: center;
+
+      background:
+        linear-gradient(
+          180deg,
+          #fff8ee,
+          #fffdf9
+        );
+    }
+
+
+    .countdown {
+      max-width: 800px;
+
+      margin: 0 auto;
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 15px;
+    }
+
+
+    .countdown-box {
+      position: relative;
+
+      padding: 27px 10px;
+
+      overflow: hidden;
+
+      border:
+        1px solid #d3a24c;
+
+      border-radius: 20px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          145deg,
+          #921f34,
+          #641522
+        );
+
+      box-shadow:
+        0 10px 28px
+        rgba(129, 29, 45, 0.18);
+    }
+
+
+    .countdown-box::before {
+      content: "";
+
+      position: absolute;
+
+      width: 80px;
+      height: 80px;
+
+      top: -40px;
+      right: -40px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(255, 227, 163, 0.12);
+    }
+
+
+    .countdown-box strong {
+      display: block;
+
+      color: #ffe3a3;
+
+      font-size: 42px;
+
+      font-variant-numeric:
+        tabular-nums;
+    }
+
+
+    .countdown-box span {
+      display: block;
+
+      margin-top: 6px;
+
+      font-family: Arial, sans-serif;
+
+      font-size: 12px;
+      font-weight: bold;
+
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
+    }
+
+
+    .countdown-message {
+      margin-top: 25px;
+
+      color: #705a4f;
+
+      font-size: 16px;
+    }
+
+
+    /* ==================================================
+       CLOSING
+    ================================================== */
+
+    .closing {
+      padding:
+        90px 20px;
+
+      text-align: center;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          rgba(93, 15, 31, 0.96),
+          rgba(73, 10, 23, 0.99)
+        );
+    }
+
+
+    .heart {
+      font-size: 38px;
+
+      margin-bottom: 20px;
+    }
+
+
+    .closing h2 {
+      max-width: 800px;
+
+      margin: auto;
+
+      font-size:
+        clamp(35px, 6vw, 52px);
+    }
+
+
+    .closing p {
+      max-width: 650px;
+
+      margin: 22px auto;
+
+      color: #f7dfe3;
+
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+
+    .closing-decoration {
+      color: #d9aa54;
+
+      margin-top: 28px;
+
+      font-size: 28px;
+    }
+
+
+    .couple-footer {
+      color: #ffe3a3 !important;
+
+      margin-top: 14px !important;
+
+      font-size: 27px !important;
+    }
+
+
+    footer {
+      padding:
+        22px 15px;
+
+      color: #e6c9cd;
+
+      background: #351017;
+
+      text-align: center;
+
+      font-family:
+        Arial, sans-serif;
+
+      font-size: 13px;
+    }
+
+
+    /* ==================================================
+       ANIMATION
+    ================================================== */
+
+    @keyframes fadeUp {
+
+      from {
+        opacity: 0;
+
+        transform:
+          translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+
+        transform:
+          translateY(0);
+      }
+
+    }
+
+
+    /* ==================================================
+       MOBILE
+    ================================================== */
 
     @media (max-width: 768px) {
-      .hero { min-height: auto; padding-top: 90px; padding-bottom: 70px; background-position: center top; }
-      .god-image { width: 230px; max-height: 230px; }
-      .name { font-size: clamp(44px,14vw,65px); }
-      .and { font-size: 34px; }
-      .couple-image { width: 280px; }
-      .invite-text { font-size: 17px; line-height: 1.7; }
-      .cards { grid-template-columns: 1fr; }
-      .card { width: 100%; max-width: 500px; margin: auto; }
-      .buttons { flex-direction: column; }
-      .button { width: 100%; max-width: 300px; min-height: 50px; }
-      .language-button { top: 12px; right: 12px; padding: 9px 14px; }
-      .details-section { padding: 70px 18px; }
-      .countdown { grid-template-columns: repeat(2,1fr); }
-      .closing { padding: 70px 20px; }
+
+      .hero {
+        min-height: auto;
+
+        padding:
+          90px 20px 70px;
+
+        background-position:
+          center top;
+      }
+
+
+      .god-image {
+        width: 230px;
+
+        max-height: 230px;
+      }
+
+
+      .name {
+        font-size:
+          clamp(44px, 14vw, 65px);
+      }
+
+
+      .and-decoration {
+        font-size: 32px;
+      }
+
+
+      .and-decoration::before,
+      .and-decoration::after {
+        width: 45px;
+      }
+
+
+      .couple-image {
+        width: 280px;
+      }
+
+
+      .invite-text {
+        font-size: 17px;
+
+        line-height: 1.7;
+      }
+
+
+      .buttons {
+        flex-direction: column;
+      }
+
+
+      .button {
+        width: 100%;
+
+        max-width: 300px;
+
+        min-height: 50px;
+      }
+
+
+      .language-button {
+        top: 12px;
+        right: 12px;
+
+        padding:
+          9px 14px;
+      }
+
+
+      .details-section {
+        padding:
+          70px 18px;
+      }
+
+
+      .scratch-card,
+      .scratch-reveal {
+        min-height: 300px;
+      }
+
+
+      .reveal-number {
+        font-size: 68px;
+      }
+
+
+      .reveal-month {
+        font-size: 21px;
+
+        letter-spacing: 3px;
+      }
+
+
+      .muhurtham-time {
+        font-size: 24px;
+      }
+
+
+      .scratch-venue {
+        font-size: 14px;
+      }
+
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+
+      .card {
+        width: 100%;
+
+        max-width: 500px;
+
+        margin: auto;
+      }
+
+
+      .countdown {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+
+      .countdown-box strong {
+        font-size: 38px;
+      }
+
+
+      .closing {
+        padding:
+          70px 20px;
+      }
+
     }
+
+
+    @media (max-width: 420px) {
+
+      .scratch-description {
+        font-size: 13px;
+      }
+
+
+      .reveal-heading {
+        font-size: 11px;
+
+        letter-spacing: 2px;
+      }
+
+
+      .reveal-day {
+        font-size: 14px;
+      }
+
+
+      .reveal-number {
+        font-size: 62px;
+      }
+
+
+      .muhurtham-time {
+        font-size: 22px;
+      }
+
+    }
+
   </style>
 </head>
+
+
 <body>
-  <button type="button" id="languageButton" class="language-button" onclick="changeLanguage()">🌐 తెలుగు</button>
+
+
+  <!-- ==================================================
+       LANGUAGE
+  ================================================== -->
+
+  <button
+    type="button"
+    id="languageButton"
+    class="language-button"
+    onclick="changeLanguage()"
+  >
+    🌐 తెలుగు
+  </button>
+
+
+
+  <!-- ==================================================
+       HERO
+  ================================================== -->
 
   <section class="hero">
+
     <div class="hero-content">
-      <img src="images/god.jpg" alt="Divine wedding blessings" class="god-image" onerror="this.style.display='none'">
 
-      <div class="om">ॐ</div>
-      <div class="blessing" data-en="With Divine Blessings" data-te="దైవ ఆశీస్సులతో">With Divine Blessings</div>
-      <p class="family-text" data-en="Together with our families" data-te="మా కుటుంబ సభ్యులతో కలిసి">Together with our families</p>
 
-      <h1 class="name" data-en="Raviteja Reddy" data-te="రవితేజ రెడ్డి">Raviteja Reddy</h1>
-      <div class="and">&amp;</div>
-      <h1 class="name" data-en="Aswini" data-te="అశ్విని">Aswini</h1>
+      <img
+        src="images/god.jpg"
+        alt="Divine wedding blessings"
+        class="god-image"
+        onerror="this.style.display='none'"
+      >
 
-      <img src="images/couples.jpg" alt="Wedding couple illustration" class="couple-image" onerror="this.style.display='none'">
 
-      <p class="invite-text"
-         data-en="We joyfully invite you to celebrate our wedding and bless us as we begin our beautiful new journey together."
-         data-te="మా వివాహ మహోత్సవానికి విచ్చేసి, నూతన జీవితాన్ని ప్రారంభిస్తున్న మమ్మల్ని ఆశీర్వదించవలసిందిగా సాదరంగా ఆహ్వానిస్తున్నాము.">
-        We joyfully invite you to celebrate our wedding and bless us as we begin our beautiful new journey together.
+      <div class="om">
+        ॐ
+      </div>
+
+
+      <div
+        class="blessing"
+        data-en="With Divine Blessings"
+        data-te="దైవ ఆశీస్సులతో"
+      >
+        With Divine Blessings
+      </div>
+
+
+      <p
+        class="family-text"
+        data-en="Together with our families"
+        data-te="మా కుటుంబ సభ్యులతో కలిసి"
+      >
+        Together with our families
       </p>
 
-      <div class="buttons">
-        <a href="#details" class="button primary-button" data-en="💍 Wedding Details" data-te="💍 వివాహ వివరాలు">💍 Wedding Details</a>
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=Nikarampalli%20Village%20Markapur"
-           target="_blank" rel="noopener noreferrer" class="button secondary-button"
-           data-en="📍 Get Directions" data-te="📍 దారి చూపించండి">📍 Get Directions</a>
+
+      <h1
+        class="name"
+        data-en="Raviteja Reddy"
+        data-te="రవితేజ రెడ్డి"
+      >
+        Raviteja Reddy
+      </h1>
+
+
+      <div class="and-decoration">
+        &amp;
       </div>
+
+
+      <h1
+        class="name"
+        data-en="Aswini"
+        data-te="అశ్విని"
+      >
+        Aswini
+      </h1>
+
+
+      <img
+        src="images/couples.jpg"
+        alt="Wedding couple illustration"
+        class="couple-image"
+        onerror="this.style.display='none'"
+      >
+
+
+      <p
+        class="invite-text"
+        data-en="We joyfully invite you to celebrate our wedding and bless us as we begin our beautiful new journey together."
+        data-te="మా వివాహ మహోత్సవానికి విచ్చేసి, నూతన జీవితాన్ని ప్రారంభిస్తున్న మమ్మల్ని ఆశీర్వదించవలసిందిగా సాదరంగా ఆహ్వానిస్తున్నాము."
+      >
+        We joyfully invite you to celebrate our wedding
+        and bless us as we begin our beautiful new journey together.
+      </p>
+
+
+      <div class="buttons">
+
+
+        <a
+          href="#details"
+          class="button primary-button"
+          data-en="✨ Reveal Our Big Day"
+          data-te="✨ మా శుభదినాన్ని చూడండి"
+        >
+          ✨ Reveal Our Big Day
+        </a>
+
+
+        <!-- Replace this URL with your exact Google Maps link -->
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&amp;query=Nikarampalli%20Village%20Markapur"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button secondary-button"
+          data-en="📍 Get Directions"
+          data-te="📍 దారి చూపించండి"
+        >
+          📍 Get Directions
+        </a>
+
+
+      </div>
+
     </div>
+
   </section>
 
-  <section id="details" class="details-section">
-    <div class="section-subtitle" data-en="Save The Date" data-te="తేదీ గుర్తుంచుకోండి">Save The Date</div>
-    <h2 class="section-title" data-en="Wedding Details" data-te="వివాహ వివరాలు">Wedding Details</h2>
+
+
+  <!-- ==================================================
+       SCRATCH REVEAL + DETAILS
+  ================================================== -->
+
+  <section
+    id="details"
+    class="details-section"
+  >
+
+
+    <div
+      class="section-subtitle"
+      data-en="A Little Surprise"
+      data-te="ఒక చిన్న సర్‌ప్రైజ్"
+    >
+      A Little Surprise
+    </div>
+
+
+    <h2
+      class="section-title"
+      data-en="Scratch to Reveal Our Special Day"
+      data-te="మా శుభదినాన్ని చూడటానికి స్క్రాచ్ చేయండి"
+    >
+      Scratch to Reveal Our Special Day
+    </h2>
+
+
     <div class="divider"></div>
+
+
+
+    <!-- SCRATCH CARD -->
+
+    <div class="scratch-container">
+
+
+      <p
+        class="scratch-description"
+        data-en="✨ Use your finger or mouse to scratch the golden card"
+        data-te="✨ బంగారు కార్డును మీ వేలితో లేదా మౌస్‌తో స్క్రాచ్ చేయండి"
+      >
+        ✨ Use your finger or mouse to scratch the golden card
+      </p>
+
+
+      <div
+        class="scratch-card"
+        id="scratchCard"
+      >
+
+
+        <div class="scratch-reveal">
+
+
+          <div
+            class="reveal-heading"
+            data-en="💍 OUR BIG DAY"
+            data-te="💍 మా శుభదినం"
+          >
+            💍 OUR BIG DAY
+          </div>
+
+
+          <div
+            class="reveal-day"
+            data-en="THURSDAY"
+            data-te="గురువారం"
+          >
+            THURSDAY
+          </div>
+
+
+          <div class="reveal-number">
+            29
+          </div>
+
+
+          <div
+            class="reveal-month"
+            data-en="OCTOBER 2026"
+            data-te="అక్టోబర్ 2026"
+          >
+            OCTOBER 2026
+          </div>
+
+
+          <div class="date-decoration">
+            ❦
+          </div>
+
+
+          <div
+            class="muhurtham-label"
+            data-en="✦ MUHURTHAM ✦"
+            data-te="✦ ముహూర్తం ✦"
+          >
+            ✦ MUHURTHAM ✦
+          </div>
+
+
+          <div
+            class="muhurtham-time"
+            data-en="7:53 AM"
+            data-te="ఉదయం 7:53"
+          >
+            7:53 AM
+          </div>
+
+
+          <div
+            class="scratch-venue"
+            data-en="📍 Nikarampalli Village, Markapur"
+            data-te="📍 నికరంపల్లి గ్రామం, మార్కాపూర్"
+          >
+            📍 Nikarampalli Village, Markapur
+          </div>
+
+
+        </div>
+
+
+        <canvas
+          id="scratchCanvas"
+          aria-label="Scratch to reveal wedding date and time"
+        ></canvas>
+
+
+      </div>
+
+    </div>
+
+
+
+    <!-- NORMAL DETAILS -->
+
 
     <div class="cards">
-      <div class="card">
-        <div class="card-icon">📅</div>
-        <h3 data-en="Date" data-te="తేదీ">Date</h3>
-        <p data-en="Thursday, 29 October 2026" data-te="గురువారం, 29 అక్టోబర్ 2026">Thursday, 29 October 2026</p>
-      </div>
+
+
+      <!-- DATE -->
 
       <div class="card">
-        <div class="card-icon">🕉️</div>
-        <h3 data-en="Muhurtham" data-te="ముహూర్తం">Muhurtham</h3>
-        <p data-en="7:53 AM" data-te="ఉదయం 7:53 గంటలకు">7:53 AM</p>
+
+        <div class="card-icon">
+          📅
+        </div>
+
+        <h3
+          data-en="Wedding Date"
+          data-te="వివాహ తేదీ"
+        >
+          Wedding Date
+        </h3>
+
+        <p
+          data-en="Thursday, 29 October 2026"
+          data-te="గురువారం, 29 అక్టోబర్ 2026"
+        >
+          Thursday, 29 October 2026
+        </p>
+
       </div>
 
-      <div class="card">
-        <div class="card-icon">📍</div>
-        <h3 data-en="Venue" data-te="వేదిక">Venue</h3>
-        <p data-en="Nikarampalli Village, Markapur" data-te="నికరంపల్లి గ్రామం, మార్కాపూర్">Nikarampalli Village, Markapur</p>
+
+
+      <!-- MUHURTHAM -->
+
+      <div class="card muhurtham-card">
+
+        <div class="card-icon">
+          🕉️
+        </div>
+
+        <h3
+          data-en="Muhurtham"
+          data-te="ముహూర్తం"
+        >
+          Muhurtham
+        </h3>
+
+        <p
+          class="time-highlight"
+          data-en="7:53 AM"
+          data-te="ఉదయం 7:53 గంటలకు"
+        >
+          7:53 AM
+        </p>
+
       </div>
+
+
+
+      <!-- VENUE -->
+
+      <div class="card">
+
+        <div class="card-icon">
+          📍
+        </div>
+
+        <h3
+          data-en="Venue"
+          data-te="వేదిక"
+        >
+          Venue
+        </h3>
+
+        <p
+          data-en="Nikarampalli Village, Markapur"
+          data-te="నికరంపల్లి గ్రామం, మార్కాపూర్"
+        >
+          Nikarampalli Village, Markapur
+        </p>
+
+      </div>
+
+
     </div>
+
+
+
+    <!-- MAP -->
+
 
     <div class="map-section">
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Nikarampalli%20Village%20Markapur"
-         target="_blank" rel="noopener noreferrer" class="button primary-button"
-         data-en="📍 Open Venue in Google Maps" data-te="📍 గూగుల్ మ్యాప్స్‌లో వేదికను తెరవండి">📍 Open Venue in Google Maps</a>
 
-      <p class="venue-note" data-en="Nikarampalli Village, Markapur" data-te="నికరంపల్లి గ్రామం, మార్కాపూర్">Nikarampalli Village, Markapur</p>
+
+      <!-- Replace this URL with your exact Google Maps link -->
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&amp;query=Nikarampalli%20Village%20Markapur"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button primary-button"
+        data-en="📍 Open Venue in Google Maps"
+        data-te="📍 గూగుల్ మ్యాప్స్‌లో వేదికను తెరవండి"
+      >
+        📍 Open Venue in Google Maps
+      </a>
+
+
+      <p
+        class="venue-note"
+        data-en="Nikarampalli Village, Markapur"
+        data-te="నికరంపల్లి గ్రామం, మార్కాపూర్"
+      >
+        Nikarampalli Village, Markapur
+      </p>
+
+
     </div>
+
+
   </section>
+
+
+
+  <!-- ==================================================
+       COUNTDOWN
+  ================================================== -->
+
 
   <section class="countdown-section">
-    <div class="section-subtitle" data-en="Our Special Day" data-te="మా శుభదినం">Our Special Day</div>
-    <h2 class="section-title" data-en="Countdown to the Wedding" data-te="వివాహానికి కౌంట్‌డౌన్">Countdown to the Wedding</h2>
-    <div class="divider"></div>
-    <div class="countdown">
-      <div class="countdown-box"><strong id="days">0</strong><span data-en="Days" data-te="రోజులు">Days</span></div>
-      <div class="countdown-box"><strong id="hours">0</strong><span data-en="Hours" data-te="గంటలు">Hours</span></div>
-      <div class="countdown-box"><strong id="minutes">0</strong><span data-en="Minutes" data-te="నిమిషాలు">Minutes</span></div>
-      <div class="countdown-box"><strong id="seconds">0</strong><span data-en="Seconds" data-te="సెకన్లు">Seconds</span></div>
+
+
+    <div
+      class="section-subtitle"
+      data-en="Our Special Day"
+      data-te="మా శుభదినం"
+    >
+      Our Special Day
     </div>
-    <p id="countdownMessage" class="countdown-message"></p>
+
+
+    <h2
+      class="section-title"
+      data-en="Countdown to the Wedding"
+      data-te="వివాహానికి కౌంట్‌డౌన్"
+    >
+      Countdown to the Wedding
+    </h2>
+
+
+    <div class="divider"></div>
+
+
+
+    <div class="countdown">
+
+
+      <div class="countdown-box">
+
+        <strong id="days">
+          0
+        </strong>
+
+        <span
+          data-en="Days"
+          data-te="రోజులు"
+        >
+          Days
+        </span>
+
+      </div>
+
+
+
+      <div class="countdown-box">
+
+        <strong id="hours">
+          0
+        </strong>
+
+        <span
+          data-en="Hours"
+          data-te="గంటలు"
+        >
+          Hours
+        </span>
+
+      </div>
+
+
+
+      <div class="countdown-box">
+
+        <strong id="minutes">
+          0
+        </strong>
+
+        <span
+          data-en="Minutes"
+          data-te="నిమిషాలు"
+        >
+          Minutes
+        </span>
+
+      </div>
+
+
+
+      <div class="countdown-box">
+
+        <strong id="seconds">
+          0
+        </strong>
+
+        <span
+          data-en="Seconds"
+          data-te="సెకన్లు"
+        >
+          Seconds
+        </span>
+
+      </div>
+
+
+    </div>
+
+
+    <p
+      id="countdownMessage"
+      class="countdown-message"
+    ></p>
+
+
   </section>
+
+
+
+  <!-- ==================================================
+       CLOSING
+  ================================================== -->
+
 
   <section class="closing">
-    <div class="heart">❤️</div>
 
-    <h2 data-en="Your presence is our greatest blessing" data-te="మీ రాకే మాకు గొప్ప ఆశీర్వాదం">Your presence is our greatest blessing</h2>
 
-    <p data-en="We look forward to celebrating this beautiful and auspicious occasion with you."
-       data-te="ఈ శుభ సందర్భాన్ని మీతో కలిసి ఆనందంగా జరుపుకోవాలని ఎదురుచూస్తున్నాము.">
-      We look forward to celebrating this beautiful and auspicious occasion with you.
+    <div class="heart">
+      ❤️
+    </div>
+
+
+    <h2
+      data-en="Your presence is our greatest blessing"
+      data-te="మీ రాకే మాకు గొప్ప ఆశీర్వాదం"
+    >
+      Your presence is our greatest blessing
+    </h2>
+
+
+    <p
+      data-en="We look forward to celebrating this beautiful and auspicious occasion with you."
+      data-te="ఈ శుభ సందర్భాన్ని మీతో కలిసి ఆనందంగా జరుపుకోవాలని ఎదురుచూస్తున్నాము."
+    >
+      We look forward to celebrating this beautiful
+      and auspicious occasion with you.
     </p>
 
-    <p class="couple-footer" data-en="Raviteja Reddy ❤️ Aswini" data-te="రవితేజ రెడ్డి ❤️ అశ్విని">Raviteja Reddy ❤️ Aswini</p>
+
+    <div class="closing-decoration">
+      ❦
+    </div>
+
+
+    <p
+      class="couple-footer"
+      data-en="Raviteja Reddy ❤️ Aswini"
+      data-te="రవితేజ రెడ్డి ❤️ అశ్విని"
+    >
+      Raviteja Reddy ❤️ Aswini
+    </p>
+
+
   </section>
 
-  <footer data-en="Made with ❤️ for Raviteja Reddy &amp; Aswini" data-te="రవితేజ రెడ్డి ❤️ అశ్విని కోసం ప్రేమతో రూపొందించబడింది">Made with ❤️ for Raviteja Reddy &amp; Aswini</footer>
+
+
+  <!-- ==================================================
+       FOOTER
+  ================================================== -->
+
+
+  <footer
+    data-en="Made with ❤️ for Raviteja Reddy & Aswini"
+    data-te="రవితేజ రెడ్డి ❤️ అశ్విని కోసం ప్రేమతో రూపొందించబడింది"
+  >
+    Made with ❤️ for Raviteja Reddy &amp; Aswini
+  </footer>
+
+
+
+  <!-- ==================================================
+       JAVASCRIPT
+  ================================================== -->
+
 
   <script>
+
+    /* ==================================================
+       LANGUAGE
+    ================================================== */
+
     let currentLanguage = "en";
-    const weddingDate = new Date("2026-10-29T07:53:00+05:30").getTime();
+
 
     function changeLanguage() {
-      currentLanguage = currentLanguage === "en" ? "te" : "en";
 
-      document.querySelectorAll("[data-en][data-te]").forEach(function (element) {
-        const translatedText = element.getAttribute("data-" + currentLanguage);
-        if (translatedText !== null) {
-          element.textContent = translatedText;
-        }
-      });
+      currentLanguage =
+        currentLanguage === "en"
+          ? "te"
+          : "en";
 
-      const languageButton = document.getElementById("languageButton");
-      languageButton.textContent = currentLanguage === "te" ? "🌐 English" : "🌐 తెలుగు";
-      document.documentElement.lang = currentLanguage;
+
+      document
+        .querySelectorAll(
+          "[data-en][data-te]"
+        )
+        .forEach(function(element) {
+
+          const text =
+            element.getAttribute(
+              "data-" + currentLanguage
+            );
+
+
+          if (text !== null) {
+            element.textContent = text;
+          }
+
+        });
+
+
+      const languageButton =
+        document.getElementById(
+          "languageButton"
+        );
+
+
+      languageButton.textContent =
+        currentLanguage === "te"
+          ? "🌐 English"
+          : "🌐 తెలుగు";
+
+
+      document.documentElement.lang =
+        currentLanguage;
+
+
       updateCountdown();
+
     }
 
-    function updateCountdown() {
-      const distance = weddingDate - Date.now();
-      const message = document.getElementById("countdownMessage");
 
-      if (distance <= 0) {
-        document.getElementById("days").textContent = "0";
-        document.getElementById("hours").textContent = "0";
-        document.getElementById("minutes").textContent = "0";
-        document.getElementById("seconds").textContent = "0";
-        message.textContent = currentLanguage === "te" ? "మా శుభదినం వచ్చేసింది! ❤️" : "Our special day has arrived! ❤️";
+
+    /* ==================================================
+       COUNTDOWN
+       Wedding:
+       29 October 2026
+       7:53 AM IST
+    ================================================== */
+
+
+    const weddingDate =
+      new Date(
+        "2026-10-29T07:53:00+05:30"
+      ).getTime();
+
+
+
+    function updateCountdown() {
+
+      const now =
+        Date.now();
+
+
+      const distance =
+        weddingDate - now;
+
+
+      const message =
+        document.getElementById(
+          "countdownMessage"
+        );
+     ? "మా శుభదినం వచ్చేసింది! ❤️"
+            : "Our special day has arrived! ❤️";
+
+
+        return;
+
+      }
+
+
+      const days =
+        Math.floor(
+          distance /
+          (1000 * 60 * 60 * 24)
+        );
+
+
+      const hours =
+        Math.floor(
+          (
+            distance %
+            (1000 * 60 * 60 * 24)
+          ) /
+          (1000 * 60 * 60)
+        );
+
+
+      const minutes =
+        Math.floor(
+          (
+            distance %
+            (1000 * 60 * 60)
+          ) /
+          (1000 * 60)
+        );
+
+
+      const seconds =
+        Math.floor(
+          (
+            distance %
+            (1000 * 60)
+          ) /
+          1000
+        );
+
+
+      document.getElementById(
+        "days"
+      ).textContent = days;
+
+
+      document.getElementById(
+        "hours"
+      ).textContent = hours;
+
+
+      document.getElementById(
+        "minutes"
+      ).textContent = minutes;
+
+
+      document.getElementById(
+        "seconds"
+      ).textContent = seconds;
+
+
+      message.textContent =
+        currentLanguage === "te"
+          ? "గురువారం, 29 అక్టోబర్ 2026 • ఉదయం 7:53 గంటలకు"
+          : "Thursday, 29 October 2026 • 7:53 AM IST";
+
+    }
+
+
+
+    updateCountdown();
+
+
+    setInterval(
+      updateCountdown,
+      1000
+    );
+
+
+
+    /* ==================================================
+       SCRATCH CARD
+    ================================================== */
+
+
+    const scratchCanvas =
+      document.getElementById(
+        "scratchCanvas"
+      );
+
+
+    const scratchCard =
+      document.getElementById(
+        "scratchCard"
+      );
+
+
+    const ctx =
+      scratchCanvas.getContext(
+        "2d"
+      );
+
+
+    let scratching = false;
+
+    let lastPoint = null;
+
+
+
+    function setupScratchCard() {
+
+      if (
+        scratchCard.classList.contains(
+          "revealed"
+        )
+      ) {
         return;
       }
 
-      document.getElementById("days").textContent = Math.floor(distance / (1000 * 60 * 60 * 24));
-      document.getElementById("hours").textContent = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      document.getElementById("minutes").textContent = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      document.getElementById("seconds").textContent = Math.floor((distance % (1000 * 60)) / 1000);
-      message.textContent = currentLanguage === "te" ? "29 అక్టోబర్ 2026 ఉదయం 7:53 గంటలకు" : "29 October 2026 at 7:53 AM IST";
+
+      const rect =
+        scratchCard.getBoundingClientRect();
+
+
+      const dpr =
+        Math.max(
+          1,
+          window.devicePixelRatio || 1
+        );
+
+
+      scratchCanvas.width =
+        Math.round(
+          rect.width * dpr
+        );
+
+
+      scratchCanvas.height =
+        Math.round(
+          rect.height * dpr
+        );
+
+
+      scratchCanvas.style.width =
+        rect.width + "px";
+
+
+      scratchCanvas.style.height =
+        rect.height + "px";
+
+
+      ctx.setTransform(
+        dpr,
+        0,
+        0,
+        dpr,
+        0,
+        0
+      );
+
+
+      /*
+       * Gold scratch layer
+       */
+
+      const gradient =
+        ctx.createLinearGradient(
+          0,
+          0,
+          rect.width,
+          rect.height
+        );
+
+
+      gradient.addColorStop(
+        0,
+        "#7d5715"
+      );
+
+
+      gradient.addColorStop(
+        0.18,
+        "#d9ad43"
+      );
+
+
+      gradient.addColorStop(
+        0.36,
+        "#ffe79a"
+      );
+
+
+      gradient.addColorStop(
+        0.52,
+        "#b67c1d"
+      );
+
+
+      gradient.addColorStop(
+        0.72,
+        "#f8d873"
+      );
+
+
+      gradient.addColorStop(
+        1,
+        "#8b6017"
+      );
+
+
+      ctx.globalCompositeOperation =
+        "source-over";
+
+
+      ctx.fillStyle =
+        gradient;
+
+
+      ctx.fillRect(
+        0,
+        0,
+        rect.width,
+        rect.height
+      );
+
+
+      /*
+       * Decorative inner border
+       */
+
+      ctx.strokeStyle =
+        "rgba(90, 49, 10, 0.55)";
+
+
+      ctx.lineWidth = 3;
+
+
+      ctx.strokeRect(
+        12,
+        12,
+        rect.width - 24,
+        rect.height - 24
+      );
+
+
+      ctx.strokeStyle =
+        "rgba(255, 239, 177, 0.65)";
+
+
+      ctx.lineWidth = 1;
+
+
+      ctx.strokeRect(
+        18,
+        18,
+        rect.width - 36,
+        rect.height - 36
+      );
+
+
+      /*
+       * Scratch instructions
+       */
+
+      ctx.fillStyle =
+        "rgba(83, 23, 34, 0.9)";
+
+
+      ctx.textAlign =
+        "center";
+
+
+      const titleSize =
+        rect.width < 450
+          ? 18
+          : 23;
+
+
+      ctx.font =
+        "700 " +
+        titleSize +
+        "px Georgia";
+
+
+      ctx.fillText(
+        "✨ SCRATCH TO REVEAL ✨",
+        rect.width / 2,
+        rect.height / 2 - 15
+      );
+
+
+      ctx.font =
+        "16px Arial";
+
+
+      ctx.fillText(
+        "Our Wedding Date & Muhurtham",
+        rect.width / 2,
+        rect.height / 2 + 22
+      );
+
+
+      ctx.globalCompositeOperation =
+        "destination-out";
+
     }
 
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
+
+
+    function getPointerPosition(
+      event
+    ) {
+
+      const rect =
+        scratchCanvas
+          .getBoundingClientRect();
+
+
+      const pointer =
+        event.touches
+          ? event.touches[0]
+          : event;
+
+
+      return {
+
+        x:
+          pointer.clientX -
+          rect.left,
+
+        y:
+          pointer.clientY -
+          rect.top
+
+      };
+
+    }
+
+
+
+    function startScratch(
+      event
+    ) {
+
+      scratching = true;
+
+
+      lastPoint =
+        getPointerPosition(
+          event
+        );
+
+
+      scratch(event);
+
+    }
+
+
+
+    function stopScratch() {
+
+      scratching = false;
+
+      lastPoint = null;
+
+    }
+
+
+
+    function scratch(
+      event
+    ) {
+
+      if (!scratching) {
+        return;
+      }
+
+
+      event.preventDefault();
+
+
+      const point =
+        getPointerPosition(
+          event
+        );
+
+
+      ctx.lineCap =
+        "round";
+
+
+      ctx.lineJoin =
+        "round";
+
+
+      ctx.lineWidth =
+        48;
+
+
+      if (lastPoint) {
+
+        ctx.beginPath();
+
+
+        ctx.moveTo(
+          lastPoint.x,
+          lastPoint.y
+        );
+
+
+        ctx.lineTo(
+          point.x,
+          point.y
+        );
+
+
+        ctx.stroke();
+
+      }
+      else {
+
+        ctx.beginPath();
+
+
+        ctx.arc(
+          point.x,
+          point.y,
+          24,
+          0,
+          Math.PI * 2
+        );
+
+
+        ctx.fill();
+
+      }
+
+
+      lastPoint =
+        point;
+
+
+      checkScratchProgress();
+
+    }
+
+
+
+    function checkScratchProgress() {
+
+      /*
+       * Check sampled canvas pixels.
+       * Fully transparent pixels indicate
+       * scratched areas.
+       */
+
+      const imageData =
+        ctx.getImageData(
+          0,
+          0,
+          scratchCanvas.width,
+          scratchCanvas.height
+        );
+
+
+      const pixels =
+        imageData.data;
+
+
+      let transparent =
+        0;
+
+
+      let checked =
+        0;
+
+
+      /*
+       * Sample rather than checking
+       * every pixel for better performance.
+       */
+
+      for (
+        let i = 3;
+        i < pixels.length;
+        i += 160
+      ) {
+
+        checked++;
+
+
+        if (
+          pixels[i] === 0
+        ) {
+
+          transparent++;
+
+        }
+
+      }
+
+
+      const percentage =
+        transparent /
+        checked;
+
+
+      /*
+       * Reveal after approximately
+       * 40% has been scratched.
+       */
+
+      if (
+        percentage > 0.40
+      ) {
+
+        scratchCard
+          .classList
+          .add(
+            "revealed"
+          );
+
+      }
+
+    }
+
+
+
+    /* Desktop mouse */
+
+    scratchCanvas.addEventListener(
+      "mousedown",
+      startScratch
+    );
+
+
+    scratchCanvas.addEventListener(
+      "mousemove",
+      scratch
+    );
+
+
+    window.addEventListener(
+      "mouseup",
+      stopScratch
+    );
+
+
+
+    /* Mobile touch */
+
+    scratchCanvas.addEventListener(
+      "touchstart",
+      startScratch,
+      {
+        passive: false
+      }
+    );
+
+
+    scratchCanvas.addEventListener(
+      "touchmove",
+      scratch,
+      {
+        passive: false
+      }
+    );
+
+
+    scratchCanvas.addEventListener(
+      "touchend",
+      stopScratch
+    );
+
+
+
+    /* Initialize */
+
+    window.addEventListener(
+      "load",
+      setupScratchCard
+    );
+
+
+
+    /*
+     * Recreate scratch surface if browser
+     * size/orientation changes before reveal.
+     */
+
+    window.addEventListener(
+      "resize",
+      function() {
+
+        if (
+          !scratchCard
+            .classList
+            .contains(
+              "revealed"
+            )
+        ) {
+
+          setupScratchCard();
+
+        }
+
+      }
+    );
+
   </script>
+
 </body>
 </html>
