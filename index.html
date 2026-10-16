@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta
     name="description"
     content="Wedding Invitation of Raviteja Reddy and Aswini"
@@ -12,11 +11,6 @@
   <title>Raviteja Reddy ❤️ Aswini | Wedding Invitation</title>
 
   <style>
-
-    /* ==================================================
-       GLOBAL
-    ================================================== */
-
     * {
       margin: 0;
       padding: 0;
@@ -29,34 +23,26 @@
 
     body {
       font-family: Georgia, "Times New Roman", serif;
-
       color: #442b20;
       background: #fffaf4;
-
       overflow-x: hidden;
     }
 
-
-    /* ==================================================
+    /* ==============================
        LANGUAGE BUTTON
-    ================================================== */
+    ============================== */
 
     .language-button {
       position: fixed;
-
       top: 18px;
       right: 18px;
-
       z-index: 1000;
 
       border: 1px solid #d7a54a;
-
       background: rgba(255, 255, 255, 0.96);
-
       color: #811d2d;
 
       padding: 10px 18px;
-
       border-radius: 30px;
 
       font-family: inherit;
@@ -65,22 +51,19 @@
 
       cursor: pointer;
 
-      box-shadow:
-        0 5px 18px rgba(0, 0, 0, 0.13);
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.13);
 
-      transition: all 0.3s ease;
+      transition: 0.3s ease;
     }
 
     .language-button:hover {
       background: #fff8e6;
-
       transform: translateY(-2px);
     }
 
-
-    /* ==================================================
+    /* ==============================
        HERO
-    ================================================== */
+    ============================== */
 
     .hero {
       position: relative;
@@ -98,19 +81,16 @@
       overflow: hidden;
 
       background:
-
         linear-gradient(
           rgba(255, 250, 240, 0.93),
           rgba(255, 247, 237, 0.97)
         ),
-
         url("images/god.jpg");
 
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
     }
-
 
     .hero::before {
       content: "";
@@ -125,12 +105,10 @@
 
       border-radius: 50%;
 
-      background:
-        rgba(238, 183, 82, 0.23);
+      background: rgba(238, 183, 82, 0.23);
 
       filter: blur(55px);
     }
-
 
     .hero::after {
       content: "";
@@ -145,16 +123,13 @@
 
       border-radius: 50%;
 
-      background:
-        rgba(147, 33, 51, 0.17);
+      background: rgba(147, 33, 51, 0.17);
 
       filter: blur(55px);
     }
 
-
     .hero-content {
       position: relative;
-
       z-index: 2;
 
       width: 100%;
@@ -163,16 +138,14 @@
       animation: fadeUp 1.2s ease;
     }
 
-
-    /* ==================================================
+    /* ==============================
        DIVINE IMAGE
-    ================================================== */
+    ============================== */
 
     .god-image {
       display: block;
 
       width: 300px;
-
       max-width: 85%;
       max-height: 290px;
 
@@ -188,26 +161,18 @@
         );
     }
 
-
     .om {
       color: #a64b15;
-
       font-size: 36px;
-
       margin-bottom: 8px;
     }
 
-
     .blessing {
       color: #a14d22;
-
       font-size: 17px;
-
       letter-spacing: 1px;
-
       margin-bottom: 20px;
     }
-
 
     .family-text {
       color: #95551e;
@@ -224,24 +189,21 @@
       margin-bottom: 25px;
     }
 
-
-    /* ==================================================
-       COUPLE NAMES
-    ================================================== */
+    /* ==============================
+       NAMES
+    ============================== */
 
     .name {
       color: #531722;
 
-      font-size:
-        clamp(46px, 10vw, 82px);
+      font-size: clamp(46px, 10vw, 82px);
 
       line-height: 1.05;
 
       text-shadow:
-        0 2px 0 #ffffff,
+        0 2px 0 #fff,
         0 5px 18px rgba(0, 0, 0, 0.08);
     }
-
 
     .and-decoration {
       display: flex;
@@ -259,7 +221,6 @@
       font-style: italic;
     }
 
-
     .and-decoration::before,
     .and-decoration::after {
       content: "";
@@ -276,16 +237,14 @@
         );
     }
 
-
-    /* ==================================================
-       COUPLE ILLUSTRATION
-    ================================================== */
+    /* ==============================
+       COUPLE IMAGE
+    ============================== */
 
     .couple-image {
       display: block;
 
       width: 330px;
-
       max-width: 90%;
       max-height: 350px;
 
@@ -299,10 +258,9 @@
         );
     }
 
-
-    /* ==================================================
-       INVITATION TEXT
-    ================================================== */
+    /* ==============================
+       INVITATION
+    ============================== */
 
     .invite-text {
       max-width: 700px;
@@ -315,10 +273,9 @@
       line-height: 1.8;
     }
 
-
-    /* ==================================================
+    /* ==============================
        BUTTONS
-    ================================================== */
+    ============================== */
 
     .buttons {
       display: flex;
@@ -332,7 +289,6 @@
 
       margin-top: 30px;
     }
-
 
     .button {
       display: inline-flex;
@@ -351,9 +307,8 @@
       font-size: 15px;
       font-weight: 600;
 
-      transition: all 0.3s ease;
+      transition: 0.3s ease;
     }
-
 
     .primary-button {
       color: white;
@@ -363,10 +318,8 @@
       border: 1px solid #811d2d;
 
       box-shadow:
-        0 6px 17px
-        rgba(129, 29, 45, 0.22);
+        0 6px 17px rgba(129, 29, 45, 0.22);
     }
-
 
     .primary-button:hover {
       background: #641522;
@@ -374,21 +327,16 @@
       transform: translateY(-3px);
     }
 
-
     .secondary-button {
       color: #811d2d;
 
-      background:
-        rgba(255, 255, 255, 0.96);
+      background: rgba(255, 255, 255, 0.96);
 
-      border:
-        1px solid #d9b16b;
+      border: 1px solid #d9b16b;
 
       box-shadow:
-        0 5px 15px
-        rgba(0, 0, 0, 0.08);
+        0 5px 15px rgba(0, 0, 0, 0.08);
     }
-
 
     .secondary-button:hover {
       background: #fff3e5;
@@ -396,10 +344,9 @@
       transform: translateY(-3px);
     }
 
-
-    /* ==================================================
-       WEDDING DETAILS
-    ================================================== */
+    /* ==============================
+       DETAILS SECTION
+    ============================== */
 
     .details-section {
       padding: 90px 20px;
@@ -414,7 +361,6 @@
         );
     }
 
-
     .section-subtitle {
       color: #b67a22;
 
@@ -428,16 +374,13 @@
       text-transform: uppercase;
     }
 
-
     .section-title {
       margin-top: 12px;
 
       color: #541925;
 
-      font-size:
-        clamp(38px, 6vw, 55px);
+      font-size: clamp(38px, 6vw, 55px);
     }
-
 
     .divider {
       width: 120px;
@@ -454,18 +397,15 @@
         );
     }
 
-
-    /* ==================================================
+    /* ==============================
        SCRATCH CARD
-    ================================================== */
+    ============================== */
 
     .scratch-container {
       max-width: 720px;
 
-      margin:
-        0 auto 60px;
+      margin: 0 auto 60px;
     }
-
 
     .scratch-description {
       color: #8f6226;
@@ -476,13 +416,11 @@
       font-weight: bold;
     }
 
-
     .scratch-card {
       position: relative;
 
       width: 100%;
-
-      min-height: 320px;
+      height: 340px;
 
       overflow: hidden;
 
@@ -495,29 +433,25 @@
 
       outline-offset: 6px;
 
+      background: #fff8e5;
+
       box-shadow:
-        0 15px 40px
-        rgba(99, 54, 16, 0.16);
+        0 15px 40px rgba(99, 54, 16, 0.16);
     }
 
-
-    /* ==================================================
-       CONTENT UNDER SCRATCH LAYER
-    ================================================== */
-
     .scratch-reveal {
-      position: relative;
+      position: absolute;
 
-      min-height: 320px;
+      inset: 0;
 
       display: flex;
 
       flex-direction: column;
 
-      align-items: center;
       justify-content: center;
+      align-items: center;
 
-      padding: 30px 20px;
+      padding: 25px;
 
       background:
         radial-gradient(
@@ -529,10 +463,8 @@
 
       box-shadow:
         inset 0 0 0 5px #fff8df,
-        inset 0 0 0 7px
-        rgba(177, 124, 32, 0.28);
+        inset 0 0 0 7px rgba(177, 124, 32, 0.28);
     }
-
 
     .reveal-heading {
       color: #a07428;
@@ -544,9 +476,8 @@
 
       letter-spacing: 4px;
 
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
-
 
     .reveal-day {
       color: #811d2d;
@@ -558,15 +489,13 @@
 
       letter-spacing: 5px;
 
-      margin-bottom: 8px;
+      margin-bottom: 7px;
     }
-
 
     .reveal-number {
       color: #641522;
 
-      font-size:
-        clamp(60px, 12vw, 90px);
+      font-size: clamp(62px, 12vw, 90px);
 
       font-weight: bold;
 
@@ -577,11 +506,10 @@
         0 6px 18px rgba(99, 21, 34, 0.12);
     }
 
-
     .reveal-month {
       color: #741c2b;
 
-      margin-top: 9px;
+      margin-top: 8px;
 
       font-size: 25px;
       font-weight: bold;
@@ -589,15 +517,13 @@
       letter-spacing: 5px;
     }
 
-
     .date-decoration {
       color: #c69332;
 
-      font-size: 28px;
+      font-size: 25px;
 
-      margin: 10px 0 7px;
+      margin: 7px 0;
     }
-
 
     .muhurtham-label {
       color: #9b6a1c;
@@ -610,50 +536,46 @@
       letter-spacing: 3px;
     }
 
-
     .muhurtham-time {
       display: inline-block;
 
-      margin-top: 10px;
+      margin-top: 8px;
 
-      padding: 10px 27px;
+      padding: 9px 26px;
 
       color: white;
 
       background: #811d2d;
 
-      border:
-        2px solid #d5ac54;
+      border: 2px solid #d5ac54;
 
       border-radius: 40px;
 
-      font-size: 28px;
+      font-size: 26px;
       font-weight: bold;
 
       box-shadow:
-        0 7px 16px
-        rgba(129, 29, 45, 0.18);
+        0 7px 16px rgba(129, 29, 45, 0.18);
     }
-
 
     .scratch-venue {
       color: #705a4f;
 
-      margin-top: 17px;
+      margin-top: 14px;
 
-      font-size: 16px;
+      font-size: 15px;
     }
 
-
-    /* ==================================================
+    /* ==============================
        SCRATCH CANVAS
-    ================================================== */
+    ============================== */
 
     #scratchCanvas {
       position: absolute;
 
-      top: 0;
-      left: 0;
+      inset: 0;
+
+      z-index: 10;
 
       width: 100%;
       height: 100%;
@@ -662,27 +584,22 @@
 
       touch-action: none;
 
-      transition:
-        opacity 0.7s ease;
+      transition: opacity 0.7s ease;
     }
-
 
     #scratchCanvas:active {
       cursor: grabbing;
     }
 
-
-    .scratch-card.revealed
-    #scratchCanvas {
+    .scratch-card.revealed #scratchCanvas {
       opacity: 0;
 
       pointer-events: none;
     }
 
-
-    /* ==================================================
+    /* ==============================
        DETAIL CARDS
-    ================================================== */
+    ============================== */
 
     .cards {
       max-width: 1050px;
@@ -691,12 +608,10 @@
 
       display: grid;
 
-      grid-template-columns:
-        repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
 
       gap: 22px;
     }
-
 
     .card {
       position: relative;
@@ -707,36 +622,28 @@
 
       background: #fffdf8;
 
-      border:
-        1px solid #efd6aa;
+      border: 1px solid #efd6aa;
 
       box-shadow:
-        0 8px 25px
-        rgba(71, 40, 17, 0.07);
+        0 8px 25px rgba(71, 40, 17, 0.07);
 
-      transition:
-        all 0.3s ease;
+      transition: 0.3s ease;
     }
 
-
     .card:hover {
-      transform:
-        translateY(-6px);
+      transform: translateY(-6px);
 
       border-color: #d8b160;
 
       box-shadow:
-        0 14px 35px
-        rgba(71, 40, 17, 0.13);
+        0 14px 35px rgba(71, 40, 17, 0.13);
     }
-
 
     .card-icon {
       font-size: 38px;
 
       margin-bottom: 15px;
     }
-
 
     .card h3 {
       color: #711b29;
@@ -746,7 +653,6 @@
       margin-bottom: 12px;
     }
 
-
     .card p {
       color: #705a4f;
 
@@ -755,12 +661,8 @@
       line-height: 1.6;
     }
 
-
-    /* Highlight Muhurtham */
-
     .muhurtham-card {
-      border:
-        2px solid #d5ac54;
+      border: 2px solid #d5ac54;
 
       background:
         linear-gradient(
@@ -769,7 +671,6 @@
           #fff4d6
         );
     }
-
 
     .time-highlight {
       display: inline-block;
@@ -785,15 +686,13 @@
       background: #811d2d;
     }
 
-
-    /* ==================================================
+    /* ==============================
        MAP
-    ================================================== */
+    ============================== */
 
     .map-section {
       margin-top: 45px;
     }
-
 
     .venue-note {
       color: #7a6358;
@@ -803,10 +702,9 @@
       font-size: 14px;
     }
 
-
-    /* ==================================================
+    /* ==============================
        COUNTDOWN
-    ================================================== */
+    ============================== */
 
     .countdown-section {
       padding: 80px 20px;
@@ -821,7 +719,6 @@
         );
     }
 
-
     .countdown {
       max-width: 800px;
 
@@ -829,12 +726,10 @@
 
       display: grid;
 
-      grid-template-columns:
-        repeat(4, 1fr);
+      grid-template-columns: repeat(4, 1fr);
 
       gap: 15px;
     }
-
 
     .countdown-box {
       position: relative;
@@ -843,8 +738,7 @@
 
       overflow: hidden;
 
-      border:
-        1px solid #d3a24c;
+      border: 1px solid #d3a24c;
 
       border-radius: 20px;
 
@@ -858,10 +752,8 @@
         );
 
       box-shadow:
-        0 10px 28px
-        rgba(129, 29, 45, 0.18);
+        0 10px 28px rgba(129, 29, 45, 0.18);
     }
-
 
     .countdown-box::before {
       content: "";
@@ -880,7 +772,6 @@
         rgba(255, 227, 163, 0.12);
     }
 
-
     .countdown-box strong {
       display: block;
 
@@ -888,10 +779,8 @@
 
       font-size: 42px;
 
-      font-variant-numeric:
-        tabular-nums;
+      font-variant-numeric: tabular-nums;
     }
-
 
     .countdown-box span {
       display: block;
@@ -908,7 +797,6 @@
       text-transform: uppercase;
     }
 
-
     .countdown-message {
       margin-top: 25px;
 
@@ -917,14 +805,12 @@
       font-size: 16px;
     }
 
-
-    /* ==================================================
+    /* ==============================
        CLOSING
-    ================================================== */
+    ============================== */
 
     .closing {
-      padding:
-        90px 20px;
+      padding: 90px 20px;
 
       text-align: center;
 
@@ -937,23 +823,19 @@
         );
     }
 
-
     .heart {
       font-size: 38px;
 
       margin-bottom: 20px;
     }
 
-
     .closing h2 {
       max-width: 800px;
 
       margin: auto;
 
-      font-size:
-        clamp(35px, 6vw, 52px);
+      font-size: clamp(35px, 6vw, 52px);
     }
-
 
     .closing p {
       max-width: 650px;
@@ -963,9 +845,9 @@
       color: #f7dfe3;
 
       font-size: 18px;
+
       line-height: 1.8;
     }
-
 
     .closing-decoration {
       color: #d9aa54;
@@ -975,7 +857,6 @@
       font-size: 28px;
     }
 
-
     .couple-footer {
       color: #ffe3a3 !important;
 
@@ -984,10 +865,8 @@
       font-size: 27px !important;
     }
 
-
     footer {
-      padding:
-        22px 15px;
+      padding: 22px 15px;
 
       color: #e6c9cd;
 
@@ -995,128 +874,90 @@
 
       text-align: center;
 
-      font-family:
-        Arial, sans-serif;
+      font-family: Arial, sans-serif;
 
       font-size: 13px;
     }
 
-
-    /* ==================================================
+    /* ==============================
        ANIMATION
-    ================================================== */
+    ============================== */
 
     @keyframes fadeUp {
-
       from {
         opacity: 0;
 
-        transform:
-          translateY(30px);
+        transform: translateY(30px);
       }
 
       to {
         opacity: 1;
 
-        transform:
-          translateY(0);
+        transform: translateY(0);
       }
-
     }
 
-
-    /* ==================================================
+    /* ==============================
        MOBILE
-    ================================================== */
+    ============================== */
 
     @media (max-width: 768px) {
 
       .hero {
         min-height: auto;
 
-        padding:
-          90px 20px 70px;
+        padding: 90px 20px 70px;
 
-        background-position:
-          center top;
+        background-position: center top;
       }
-
 
       .god-image {
         width: 230px;
-
-        max-height: 230px;
       }
-
 
       .name {
         font-size:
           clamp(44px, 14vw, 65px);
       }
 
-
       .and-decoration {
         font-size: 32px;
       }
-
 
       .and-decoration::before,
       .and-decoration::after {
         width: 45px;
       }
 
-
       .couple-image {
         width: 280px;
       }
 
-
       .invite-text {
         font-size: 17px;
-
-        line-height: 1.7;
       }
-
 
       .buttons {
         flex-direction: column;
       }
 
-
       .button {
         width: 100%;
 
         max-width: 300px;
-
-        min-height: 50px;
       }
-
-
-      .language-button {
-        top: 12px;
-        right: 12px;
-
-        padding:
-          9px 14px;
-      }
-
 
       .details-section {
-        padding:
-          70px 18px;
+        padding: 70px 18px;
       }
 
-
-      .scratch-card,
-      .scratch-reveal {
-        min-height: 300px;
+      .scratch-card {
+        height: 330px;
       }
-
 
       .reveal-number {
         font-size: 68px;
       }
-
 
       .reveal-month {
         font-size: 21px;
@@ -1124,110 +965,49 @@
         letter-spacing: 3px;
       }
 
-
       .muhurtham-time {
-        font-size: 24px;
+        font-size: 23px;
       }
-
-
-      .scratch-venue {
-        font-size: 14px;
-      }
-
 
       .cards {
         grid-template-columns: 1fr;
       }
 
-
-      .card {
-        width: 100%;
-
-        max-width: 500px;
-
-        margin: auto;
-      }
-
-
       .countdown {
-        grid-template-columns:
-          repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
-
 
       .countdown-box strong {
         font-size: 38px;
       }
 
-
       .closing {
-        padding:
-          70px 20px;
+        padding: 70px 20px;
       }
-
-    }
-
-
-    @media (max-width: 420px) {
-
-      .scratch-description {
-        font-size: 13px;
-      }
-
-
-      .reveal-heading {
-        font-size: 11px;
-
-        letter-spacing: 2px;
-      }
-
-
-      .reveal-day {
-        font-size: 14px;
-      }
-
-
-      .reveal-number {
-        font-size: 62px;
-      }
-
-
-      .muhurtham-time {
-        font-size: 22px;
-      }
-
     }
 
   </style>
 </head>
 
-
 <body>
 
-
-  <!-- ==================================================
-       LANGUAGE
-  ================================================== -->
+  <!-- LANGUAGE -->
 
   <button
-    type="button"
     id="languageButton"
     class="language-button"
+    type="button"
     onclick="changeLanguage()"
   >
     🌐 తెలుగు
   </button>
 
 
-
-  <!-- ==================================================
-       HERO
-  ================================================== -->
+  <!-- HERO -->
 
   <section class="hero">
 
     <div class="hero-content">
-
 
       <img
         src="images/god.jpg"
@@ -1236,11 +1016,9 @@
         onerror="this.style.display='none'"
       >
 
-
       <div class="om">
         ॐ
       </div>
-
 
       <div
         class="blessing"
@@ -1250,7 +1028,6 @@
         With Divine Blessings
       </div>
 
-
       <p
         class="family-text"
         data-en="Together with our families"
@@ -1258,7 +1035,6 @@
       >
         Together with our families
       </p>
-
 
       <h1
         class="name"
@@ -1268,11 +1044,9 @@
         Raviteja Reddy
       </h1>
 
-
       <div class="and-decoration">
         &amp;
       </div>
-
 
       <h1
         class="name"
@@ -1282,7 +1056,6 @@
         Aswini
       </h1>
 
-
       <img
         src="images/couples.jpg"
         alt="Wedding couple illustration"
@@ -1290,19 +1063,16 @@
         onerror="this.style.display='none'"
       >
 
-
       <p
         class="invite-text"
         data-en="We joyfully invite you to celebrate our wedding and bless us as we begin our beautiful new journey together."
         data-te="మా వివాహ మహోత్సవానికి విచ్చేసి, నూతన జీవితాన్ని ప్రారంభిస్తున్న మమ్మల్ని ఆశీర్వదించవలసిందిగా సాదరంగా ఆహ్వానిస్తున్నాము."
       >
-        We joyfully invite you to celebrate our wedding
-        and bless us as we begin our beautiful new journey together.
+        We joyfully invite you to celebrate our wedding and
+        bless us as we begin our beautiful new journey together.
       </p>
 
-
       <div class="buttons">
-
 
         <a
           href="#details"
@@ -1312,9 +1082,6 @@
         >
           ✨ Reveal Our Big Day
         </a>
-
-
-        <!-- Replace this URL with your exact Google Maps link -->
 
         <a
           href="https://www.google.com/maps/search/?api=1&amp;query=Nikarampalli%20Village%20Markapur"
@@ -1327,7 +1094,6 @@
           📍 Get Directions
         </a>
 
-
       </div>
 
     </div>
@@ -1335,16 +1101,12 @@
   </section>
 
 
-
-  <!-- ==================================================
-       SCRATCH REVEAL + DETAILS
-  ================================================== -->
+  <!-- SCRATCH + DETAILS -->
 
   <section
     id="details"
     class="details-section"
   >
-
 
     <div
       class="section-subtitle"
@@ -1354,7 +1116,6 @@
       A Little Surprise
     </div>
 
-
     <h2
       class="section-title"
       data-en="Scratch to Reveal Our Special Day"
@@ -1363,15 +1124,12 @@
       Scratch to Reveal Our Special Day
     </h2>
 
-
     <div class="divider"></div>
-
 
 
     <!-- SCRATCH CARD -->
 
     <div class="scratch-container">
-
 
       <p
         class="scratch-description"
@@ -1381,15 +1139,12 @@
         ✨ Use your finger or mouse to scratch the golden card
       </p>
 
-
       <div
         class="scratch-card"
         id="scratchCard"
       >
 
-
         <div class="scratch-reveal">
-
 
           <div
             class="reveal-heading"
@@ -1399,7 +1154,6 @@
             💍 OUR BIG DAY
           </div>
 
-
           <div
             class="reveal-day"
             data-en="THURSDAY"
@@ -1408,11 +1162,9 @@
             THURSDAY
           </div>
 
-
           <div class="reveal-number">
             29
           </div>
-
 
           <div
             class="reveal-month"
@@ -1422,11 +1174,9 @@
             OCTOBER 2026
           </div>
 
-
           <div class="date-decoration">
             ❦
           </div>
-
 
           <div
             class="muhurtham-label"
@@ -1436,7 +1186,6 @@
             ✦ MUHURTHAM ✦
           </div>
 
-
           <div
             class="muhurtham-time"
             data-en="7:53 AM"
@@ -1444,7 +1193,6 @@
           >
             7:53 AM
           </div>
-
 
           <div
             class="scratch-venue"
@@ -1454,29 +1202,21 @@
             📍 Nikarampalli Village, Markapur
           </div>
 
-
         </div>
-
 
         <canvas
           id="scratchCanvas"
-          aria-label="Scratch to reveal wedding date and time"
+          aria-label="Scratch card"
         ></canvas>
-
 
       </div>
 
     </div>
 
 
-
-    <!-- NORMAL DETAILS -->
-
+    <!-- CARDS -->
 
     <div class="cards">
-
-
-      <!-- DATE -->
 
       <div class="card">
 
@@ -1500,9 +1240,6 @@
 
       </div>
 
-
-
-      <!-- MUHURTHAM -->
 
       <div class="card muhurtham-card">
 
@@ -1528,9 +1265,6 @@
       </div>
 
 
-
-      <!-- VENUE -->
-
       <div class="card">
 
         <div class="card-icon">
@@ -1553,18 +1287,12 @@
 
       </div>
 
-
     </div>
-
 
 
     <!-- MAP -->
 
-
     <div class="map-section">
-
-
-      <!-- Replace this URL with your exact Google Maps link -->
 
       <a
         href="https://www.google.com/maps/search/?api=1&amp;query=Nikarampalli%20Village%20Markapur"
@@ -1577,7 +1305,6 @@
         📍 Open Venue in Google Maps
       </a>
 
-
       <p
         class="venue-note"
         data-en="Nikarampalli Village, Markapur"
@@ -1586,21 +1313,14 @@
         Nikarampalli Village, Markapur
       </p>
 
-
     </div>
-
 
   </section>
 
 
-
-  <!-- ==================================================
-       COUNTDOWN
-  ================================================== -->
-
+  <!-- COUNTDOWN -->
 
   <section class="countdown-section">
-
 
     <div
       class="section-subtitle"
@@ -1610,7 +1330,6 @@
       Our Special Day
     </div>
 
-
     <h2
       class="section-title"
       data-en="Countdown to the Wedding"
@@ -1619,19 +1338,12 @@
       Countdown to the Wedding
     </h2>
 
-
     <div class="divider"></div>
-
-
 
     <div class="countdown">
 
-
       <div class="countdown-box">
-
-        <strong id="days">
-          0
-        </strong>
+        <strong id="days">0</strong>
 
         <span
           data-en="Days"
@@ -1639,16 +1351,10 @@
         >
           Days
         </span>
-
       </div>
 
-
-
       <div class="countdown-box">
-
-        <strong id="hours">
-          0
-        </strong>
+        <strong id="hours">00</strong>
 
         <span
           data-en="Hours"
@@ -1656,16 +1362,10 @@
         >
           Hours
         </span>
-
       </div>
 
-
-
       <div class="countdown-box">
-
-        <strong id="minutes">
-          0
-        </strong>
+        <strong id="minutes">00</strong>
 
         <span
           data-en="Minutes"
@@ -1673,16 +1373,10 @@
         >
           Minutes
         </span>
-
       </div>
 
-
-
       <div class="countdown-box">
-
-        <strong id="seconds">
-          0
-        </strong>
+        <strong id="seconds">00</strong>
 
         <span
           data-en="Seconds"
@@ -1690,35 +1384,25 @@
         >
           Seconds
         </span>
-
       </div>
 
-
     </div>
-
 
     <p
       id="countdownMessage"
       class="countdown-message"
     ></p>
 
-
   </section>
 
 
-
-  <!-- ==================================================
-       CLOSING
-  ================================================== -->
-
+  <!-- CLOSING -->
 
   <section class="closing">
-
 
     <div class="heart">
       ❤️
     </div>
-
 
     <h2
       data-en="Your presence is our greatest blessing"
@@ -1727,20 +1411,17 @@
       Your presence is our greatest blessing
     </h2>
 
-
     <p
       data-en="We look forward to celebrating this beautiful and auspicious occasion with you."
       data-te="ఈ శుభ సందర్భాన్ని మీతో కలిసి ఆనందంగా జరుపుకోవాలని ఎదురుచూస్తున్నాము."
     >
-      We look forward to celebrating this beautiful
-      and auspicious occasion with you.
+      We look forward to celebrating this beautiful and
+      auspicious occasion with you.
     </p>
-
 
     <div class="closing-decoration">
       ❦
     </div>
-
 
     <p
       class="couple-footer"
@@ -1750,14 +1431,7 @@
       Raviteja Reddy ❤️ Aswini
     </p>
 
-
   </section>
-
-
-
-  <!-- ==================================================
-       FOOTER
-  ================================================== -->
 
 
   <footer
@@ -1768,20 +1442,13 @@
   </footer>
 
 
-
-  <!-- ==================================================
-       JAVASCRIPT
-  ================================================== -->
-
-
   <script>
 
-    /* ==================================================
+    /* ==============================
        LANGUAGE
-    ================================================== */
+    ============================== */
 
     let currentLanguage = "en";
-
 
     function changeLanguage() {
 
@@ -1790,11 +1457,8 @@
           ? "te"
           : "en";
 
-
       document
-        .querySelectorAll(
-          "[data-en][data-te]"
-        )
+        .querySelectorAll("[data-en][data-te]")
         .forEach(function(element) {
 
           const text =
@@ -1802,43 +1466,32 @@
               "data-" + currentLanguage
             );
 
-
           if (text !== null) {
             element.textContent = text;
           }
 
         });
 
-
       const languageButton =
         document.getElementById(
           "languageButton"
         );
-
 
       languageButton.textContent =
         currentLanguage === "te"
           ? "🌐 English"
           : "🌐 తెలుగు";
 
-
       document.documentElement.lang =
         currentLanguage;
 
-
       updateCountdown();
-
     }
 
 
-
-    /* ==================================================
+    /* ==============================
        COUNTDOWN
-       Wedding:
-       29 October 2026
-       7:53 AM IST
-    ================================================== */
-
+    ============================== */
 
     const weddingDate =
       new Date(
@@ -1846,27 +1499,44 @@
       ).getTime();
 
 
-
     function updateCountdown() {
 
-      const now =
-        Date.now();
-
+      const now = Date.now();
 
       const distance =
         weddingDate - now;
 
+      const daysElement =
+        document.getElementById("days");
+
+      const hoursElement =
+        document.getElementById("hours");
+
+      const minutesElement =
+        document.getElementById("minutes");
+
+      const secondsElement =
+        document.getElementById("seconds");
 
       const message =
         document.getElementById(
           "countdownMessage"
         );
-     ? "మా శుభదినం వచ్చేసింది! ❤️"
+
+
+      if (distance <= 0) {
+
+        daysElement.textContent = "0";
+        hoursElement.textContent = "00";
+        minutesElement.textContent = "00";
+        secondsElement.textContent = "00";
+
+        message.textContent =
+          currentLanguage === "te"
+            ? "మా శుభదినం వచ్చేసింది! ❤️"
             : "Our special day has arrived! ❤️";
 
-
         return;
-
       }
 
 
@@ -1875,7 +1545,6 @@
           distance /
           (1000 * 60 * 60 * 24)
         );
-
 
       const hours =
         Math.floor(
@@ -1886,7 +1555,6 @@
           (1000 * 60 * 60)
         );
 
-
       const minutes =
         Math.floor(
           (
@@ -1895,7 +1563,6 @@
           ) /
           (1000 * 60)
         );
-
 
       const seconds =
         Math.floor(
@@ -1907,37 +1574,27 @@
         );
 
 
-      document.getElementById(
-        "days"
-      ).textContent = days;
+      daysElement.textContent =
+        days;
 
+      hoursElement.textContent =
+        String(hours).padStart(2, "0");
 
-      document.getElementById(
-        "hours"
-      ).textContent = hours;
+      minutesElement.textContent =
+        String(minutes).padStart(2, "0");
 
-
-      document.getElementById(
-        "minutes"
-      ).textContent = minutes;
-
-
-      document.getElementById(
-        "seconds"
-      ).textContent = seconds;
+      secondsElement.textContent =
+        String(seconds).padStart(2, "0");
 
 
       message.textContent =
         currentLanguage === "te"
           ? "గురువారం, 29 అక్టోబర్ 2026 • ఉదయం 7:53 గంటలకు"
           : "Thursday, 29 October 2026 • 7:53 AM IST";
-
     }
 
 
-
     updateCountdown();
-
 
     setInterval(
       updateCountdown,
@@ -1945,537 +1602,47 @@
     );
 
 
-
-    /* ==================================================
+    /* ==============================
        SCRATCH CARD
-    ================================================== */
-
+    ============================== */
 
     const scratchCanvas =
       document.getElementById(
         "scratchCanvas"
       );
 
-
     const scratchCard =
       document.getElementById(
         "scratchCard"
       );
 
-
     const ctx =
-      scratchCanvas.getContext(
-        "2d"
-      );
-
+      scratchCanvas.getContext("2d");
 
     let scratching = false;
 
     let lastPoint = null;
 
+    let scratchRevealed = false;
 
+
+    /* ==============================
+       CREATE GOLD COVER
+    ============================== */
 
     function setupScratchCard() {
 
-      if (
-        scratchCard.classList.contains(
-          "revealed"
-        )
-      ) {
+      if (scratchRevealed) {
         return;
       }
-
 
       const rect =
         scratchCard.getBoundingClientRect();
 
+      const width =
+        Math.round(rect.width);
 
-      const dpr =
-        Math.max(
-          1,
-          window.devicePixelRatio || 1
-        );
+      const height =
+        Math.round(rect.height);
 
-
-      scratchCanvas.width =
-        Math.round(
-          rect.width * dpr
-        );
-
-
-      scratchCanvas.height =
-        Math.round(
-          rect.height * dpr
-        );
-
-
-      scratchCanvas.style.width =
-        rect.width + "px";
-
-
-      scratchCanvas.style.height =
-        rect.height + "px";
-
-
-      ctx.setTransform(
-        dpr,
-        0,
-        0,
-        dpr,
-        0,
-        0
-      );
-
-
-      /*
-       * Gold scratch layer
-       */
-
-      const gradient =
-        ctx.createLinearGradient(
-          0,
-          0,
-          rect.width,
-          rect.height
-        );
-
-
-      gradient.addColorStop(
-        0,
-        "#7d5715"
-      );
-
-
-      gradient.addColorStop(
-        0.18,
-        "#d9ad43"
-      );
-
-
-      gradient.addColorStop(
-        0.36,
-        "#ffe79a"
-      );
-
-
-      gradient.addColorStop(
-        0.52,
-        "#b67c1d"
-      );
-
-
-      gradient.addColorStop(
-        0.72,
-        "#f8d873"
-      );
-
-
-      gradient.addColorStop(
-        1,
-        "#8b6017"
-      );
-
-
-      ctx.globalCompositeOperation =
-        "source-over";
-
-
-      ctx.fillStyle =
-        gradient;
-
-
-      ctx.fillRect(
-        0,
-        0,
-        rect.width,
-        rect.height
-      );
-
-
-      /*
-       * Decorative inner border
-       */
-
-      ctx.strokeStyle =
-        "rgba(90, 49, 10, 0.55)";
-
-
-      ctx.lineWidth = 3;
-
-
-      ctx.strokeRect(
-        12,
-        12,
-        rect.width - 24,
-        rect.height - 24
-      );
-
-
-      ctx.strokeStyle =
-        "rgba(255, 239, 177, 0.65)";
-
-
-      ctx.lineWidth = 1;
-
-
-      ctx.strokeRect(
-        18,
-        18,
-        rect.width - 36,
-        rect.height - 36
-      );
-
-
-      /*
-       * Scratch instructions
-       */
-
-      ctx.fillStyle =
-        "rgba(83, 23, 34, 0.9)";
-
-
-      ctx.textAlign =
-        "center";
-
-
-      const titleSize =
-        rect.width < 450
-          ? 18
-          : 23;
-
-
-      ctx.font =
-        "700 " +
-        titleSize +
-        "px Georgia";
-
-
-      ctx.fillText(
-        "✨ SCRATCH TO REVEAL ✨",
-        rect.width / 2,
-        rect.height / 2 - 15
-      );
-
-
-      ctx.font =
-        "16px Arial";
-
-
-      ctx.fillText(
-        "Our Wedding Date & Muhurtham",
-        rect.width / 2,
-        rect.height / 2 + 22
-      );
-
-
-      ctx.globalCompositeOperation =
-        "destination-out";
-
-    }
-
-
-
-    function getPointerPosition(
-      event
-    ) {
-
-      const rect =
-        scratchCanvas
-          .getBoundingClientRect();
-
-
-      const pointer =
-        event.touches
-          ? event.touches[0]
-          : event;
-
-
-      return {
-
-        x:
-          pointer.clientX -
-          rect.left,
-
-        y:
-          pointer.clientY -
-          rect.top
-
-      };
-
-    }
-
-
-
-    function startScratch(
-      event
-    ) {
-
-      scratching = true;
-
-
-      lastPoint =
-        getPointerPosition(
-          event
-        );
-
-
-      scratch(event);
-
-    }
-
-
-
-    function stopScratch() {
-
-      scratching = false;
-
-      lastPoint = null;
-
-    }
-
-
-
-    function scratch(
-      event
-    ) {
-
-      if (!scratching) {
-        return;
-      }
-
-
-      event.preventDefault();
-
-
-      const point =
-        getPointerPosition(
-          event
-        );
-
-
-      ctx.lineCap =
-        "round";
-
-
-      ctx.lineJoin =
-        "round";
-
-
-      ctx.lineWidth =
-        48;
-
-
-      if (lastPoint) {
-
-        ctx.beginPath();
-
-
-        ctx.moveTo(
-          lastPoint.x,
-          lastPoint.y
-        );
-
-
-        ctx.lineTo(
-          point.x,
-          point.y
-        );
-
-
-        ctx.stroke();
-
-      }
-      else {
-
-        ctx.beginPath();
-
-
-        ctx.arc(
-          point.x,
-          point.y,
-          24,
-          0,
-          Math.PI * 2
-        );
-
-
-        ctx.fill();
-
-      }
-
-
-      lastPoint =
-        point;
-
-
-      checkScratchProgress();
-
-    }
-
-
-
-    function checkScratchProgress() {
-
-      /*
-       * Check sampled canvas pixels.
-       * Fully transparent pixels indicate
-       * scratched areas.
-       */
-
-      const imageData =
-        ctx.getImageData(
-          0,
-          0,
-          scratchCanvas.width,
-          scratchCanvas.height
-        );
-
-
-      const pixels =
-        imageData.data;
-
-
-      let transparent =
-        0;
-
-
-      let checked =
-        0;
-
-
-      /*
-       * Sample rather than checking
-       * every pixel for better performance.
-       */
-
-      for (
-        let i = 3;
-        i < pixels.length;
-        i += 160
-      ) {
-
-        checked++;
-
-
-        if (
-          pixels[i] === 0
-        ) {
-
-          transparent++;
-
-        }
-
-      }
-
-
-      const percentage =
-        transparent /
-        checked;
-
-
-      /*
-       * Reveal after approximately
-       * 40% has been scratched.
-       */
-
-      if (
-        percentage > 0.40
-      ) {
-
-        scratchCard
-          .classList
-          .add(
-            "revealed"
-          );
-
-      }
-
-    }
-
-
-
-    /* Desktop mouse */
-
-    scratchCanvas.addEventListener(
-      "mousedown",
-      startScratch
-    );
-
-
-    scratchCanvas.addEventListener(
-      "mousemove",
-      scratch
-    );
-
-
-    window.addEventListener(
-      "mouseup",
-      stopScratch
-    );
-
-
-
-    /* Mobile touch */
-
-    scratchCanvas.addEventListener(
-      "touchstart",
-      startScratch,
-      {
-        passive: false
-      }
-    );
-
-
-    scratchCanvas.addEventListener(
-      "touchmove",
-      scratch,
-      {
-        passive: false
-      }
-    );
-
-
-    scratchCanvas.addEventListener(
-      "touchend",
-      stopScratch
-    );
-
-
-
-    /* Initialize */
-
-    window.addEventListener(
-      "load",
-      setupScratchCard
-    );
-
-
-
-    /*
-     * Recreate scratch surface if browser
-     * size/orientation changes before reveal.
-     */
-
-    window.addEventListener(
-      "resize",
-      function() {
-
-        if (
-          !scratchCard
-            .classList
-            .contains(
-              "revealed"
-            )
-        ) {
-
-          setupScratchCard();
-
-        }
-
-      }
-    );
-
-  </script>
-
-</body>
-</html>
+      
