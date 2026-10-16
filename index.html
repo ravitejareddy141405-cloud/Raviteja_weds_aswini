@@ -1,0 +1,102 @@
+import React, { useState } from "react";
+import { CalendarDays, Clock3, MapPin, Heart, Navigation, Languages } from "lucide-react";
+import { motion } from "framer-motion";
+
+export default function WeddingInvitation() {
+  const [lang, setLang] = useState("en");
+
+  const t = {
+    en: {
+      family: "Together with our families",
+      invite: "We joyfully invite you to celebrate our wedding and bless us as we begin our new journey together.",
+      details: "Wedding Details",
+      dateTitle: "Date",
+      date: "29 August",
+      timeTitle: "Muhurtham",
+      time: "7:53 AM",
+      venueTitle: "Venue",
+      venue: "Nikarampalli Village, Markapur",
+      directions: "Get Directions",
+      closing: "Your presence is our greatest blessing",
+      note: "We look forward to celebrating this beautiful morning with you.",
+      language: "తెలుగు"
+    },
+    te: {
+      family: "మా కుటుంబ సభ్యులతో కలిసి",
+      invite: "మా వివాహ మహోత్సవానికి విచ్చేసి, నూతన జీవితాన్ని ప్రారంభిస్తున్న మమ్మల్ని ఆశీర్వదించవలసిందిగా సాదరంగా ఆహ్వానిస్తున్నాము.",
+      details: "వివాహ వివరాలు",
+      dateTitle: "తేదీ",
+      date: "ఆగస్టు 29",
+      timeTitle: "ముహూర్తం",
+      time: "ఉదయం 7:53 గంటలకు",
+      venueTitle: "వేదిక",
+      venue: "నికరంపల్లి గ్రామం, మార్కాపూర్",
+      directions: "దారి చూపించండి",
+      closing: "మీ రాకే మాకు ఆశీర్వాదం",
+      note: "ఈ శుభ సందర్భాన్ని మీతో కలిసి ఆనందంగా జరుపుకోవాలని ఎదురుచూస్తున్నాము.",
+      language: "English"
+    }
+  }[lang];
+
+  const maps = "https://www.google.com/maps/search/?api=1&query=Nikarampalli+Village+Markapur";
+
+  return (
+    <main className="min-h-screen bg-[#fffaf4] text-stone-800">
+      <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden bg-gradient-to-b from-amber-50 via-rose-50 to-[#fffaf4] px-5 text-center">
+        <div className="absolute right-4 top-4 z-20">
+          <button onClick={() => setLang(lang === "en" ? "te" : "en")} className="flex items-center gap-2 rounded-full border border-amber-200 bg-white/90 px-4 py-2 text-sm font-semibold text-rose-800 shadow-sm backdrop-blur hover:bg-white">
+            <Languages className="h-4 w-4" /> {t.language}
+          </button>
+        </div>
+
+        <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-orange-200/30 blur-3xl" />
+        <div className="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-rose-200/40 blur-3xl" />
+
+        <motion.div initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="relative mx-auto max-w-4xl py-20">
+          <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full border border-amber-200 bg-white shadow-sm">
+            <Heart className="h-7 w-7 fill-rose-600 text-rose-600" />
+          </div>
+          <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-amber-800">{t.family}</p>
+          <h1 className="font-serif text-5xl leading-tight text-stone-900 md:text-8xl">Raviteja Reddy</h1>
+          <div className="my-3 font-serif text-3xl italic text-rose-600 md:text-5xl">&</div>
+          <h1 className="font-serif text-5xl leading-tight text-stone-900 md:text-8xl">Aswini</h1>
+          <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-stone-600">{t.invite}</p>
+          <div className="mt-9 flex flex-wrap justify-center gap-3">
+            <a href="#details" className="inline-flex items-center rounded-full bg-rose-800 px-6 py-3 font-semibold text-white shadow-sm hover:bg-rose-900"><CalendarDays className="mr-2 h-4 w-4" />{t.details}</a>
+            <a href={maps} target="_blank" rel="noreferrer" className="inline-flex items-center rounded-full border border-rose-200 bg-white px-6 py-3 font-semibold text-rose-800 shadow-sm hover:bg-rose-50"><Navigation className="mr-2 h-4 w-4" />{t.directions}</a>
+          </div>
+        </motion.div>
+      </section>
+
+      <section id="details" className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mb-10 text-center">
+          <Heart className="mx-auto h-5 w-5 fill-rose-600 text-rose-600" />
+          <h2 className="mt-3 font-serif text-4xl text-stone-900 md:text-5xl">{t.details}</h2>
+        </div>
+        <div className="grid gap-5 md:grid-cols-3">
+          {[
+            [CalendarDays, t.dateTitle, t.date],
+            [Clock3, t.timeTitle, t.time],
+            [MapPin, t.venueTitle, t.venue]
+          ].map(([Icon, title, value]) => (
+            <motion.div whileHover={{ y: -4 }} key={title} className="rounded-3xl border border-amber-100 bg-white p-8 text-center shadow-sm">
+              <Icon className="mx-auto mb-4 h-7 w-7 text-rose-700" />
+              <h3 className="font-serif text-2xl text-stone-900">{title}</h3>
+              <p className="mt-3 text-lg leading-7 text-stone-600">{value}</p>
+            </motion.div>
+          ))}
+        </div>
+        <div className="mt-8 text-center">
+          <a href={maps} target="_blank" rel="noreferrer" className="inline-flex items-center rounded-full bg-amber-700 px-7 py-3 font-semibold text-white hover:bg-amber-800"><MapPin className="mr-2 h-4 w-4" />{t.directions}</a>
+        </div>
+      </section>
+
+      <section className="bg-rose-900 px-6 py-20 text-center text-white">
+        <Heart className="mx-auto mb-5 h-7 w-7 fill-rose-200 text-rose-200" />
+        <h2 className="mx-auto max-w-3xl font-serif text-4xl md:text-5xl">{t.closing}</h2>
+        <p className="mx-auto mt-5 max-w-2xl leading-7 text-rose-100">{t.note}</p>
+        <p className="mt-8 font-serif text-2xl">Raviteja Reddy & Aswini</p>
+      </section>
+    </main>
+  );
+}
